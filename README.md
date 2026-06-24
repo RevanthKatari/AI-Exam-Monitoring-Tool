@@ -126,3 +126,14 @@ The FastAPI endpoint should return the same shape as `src/data/students.js`.
 | 9 | Deployment, demo, academic defence |
 
 ---
+
+
+
+<img width="1527" height="804" alt="image" src="https://github.com/user-attachments/assets/1fa55150-a6db-4d2c-a96c-5b62dc60c7ec" />
+
+
+<img width="880" height="663" alt="image" src="https://github.com/user-attachments/assets/058cbf6d-94a1-4997-bbed-d7e17a0b388f" />
+
+
+<img width="900" height="705" alt="image" src="https://github.com/user-attachments/assets/b4b059cb-5a4b-472d-b6a4-2ad752a0b800" />
+
