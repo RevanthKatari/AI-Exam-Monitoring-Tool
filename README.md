@@ -1,4 +1,4 @@
-# ProctorAI — Exam Monitoring Dashboard
+# AI — Exam Monitoring Dashboard
 
 COMP8567 Internship Project · University of Windsor · Team 04
 
@@ -38,8 +38,6 @@ exam-monitor/
 
 ### Option 1 — Direct open
 Just open `index.html` in Chrome, Edge, or Firefox.
-
-> **Note:** Because the page uses ES modules (`import`), Chrome may block local file imports due to CORS. Use Option 2 if that happens.
 
 ### Option 2 — Local server (recommended)
 
@@ -81,7 +79,7 @@ Install the **Live Server** extension, right-click `index.html` → "Open with L
 
 ---
 
-## Connecting to the real backend (Week 4–7)
+## Connecting to the real backend (soon)
 
 Replace the static import in `index.html`:
 
@@ -128,12 +126,3 @@ The FastAPI endpoint should return the same shape as `src/data/students.js`.
 | 9 | Deployment, demo, academic defence |
 
 ---
-
-## Jira epic mapping
-
-| Epic | Covers |
-|------|--------|
-| Epic 1: UI/UX & Frontend Core | This prototype, React migration |
-| Epic 2: Backend & Database | FastAPI routes, MongoDB schemas |
-| Epic 3: AI Engine | MediaPipe, YOLOv8, Audio API |
-| Epic 4: QA & Reporting | This dashboard + automated testing |
