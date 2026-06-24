@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProctorAI — Exam Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ── Top bar ───────────────────────────────────────────── -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">
+        <svg viewBox="0 0 16 16"><circle cx="8" cy="6" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M13 3l1.5-1.5M3 3L1.5 1.5M8 1V0"/></svg>
+      </div>
+      <div>
+        <div class="exam-name">COMP3430 — Data Structures Final</div>
+        <div class="exam-meta">Section A &nbsp;·&nbsp; Started 09:00 &nbsp;·&nbsp; <span id="timer">90:00</span> remaining</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="live-pill"><div class="live-dot"></div> Live</div>
+      <button class="btn" onclick="exportReport()">Export report</button>
+    </div>
+  </header>
+
+  <!-- ── Metric strip ──────────────────────────────────────── -->
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Active students</div>
+      <div class="metric-value" id="m-active">—</div>
+      <div class="metric-sub">of 26 enrolled</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Flags raised</div>
+      <div class="metric-value c-warning" id="m-flags">—</div>
+      <div class="metric-sub">this session</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">High-risk sessions</div>
+      <div class="metric-value c-danger" id="m-risk">—</div>
+      <div class="metric-sub">integrity score &lt; 60</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Avg integrity score</div>
+      <div class="metric-value c-ok" id="m-avg">—</div>
+      <div class="metric-sub">across session</div>
+    </div>
+  </div>
+
+  <!-- ── Main split ─────────────────────────────────────────── -->
+  <div class="main">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Student sessions</span>
+        <span style="font-size:11px;color:var(--text-3);" id="count-label">10 students</span>
+      </div>
+      <div class="filter-row" id="filter-row">
+        <button class="filter-btn active" data-f="all">All</button>
+        <button class="filter-btn" data-f="high-risk">High risk</button>
+        <button class="filter-btn" data-f="flagged">Flagged</button>
+        <button class="filter-btn" data-f="clean">Clean</button>
+      </div>
+      <div class="student-list" id="student-list"></div>
+    </aside>
+
+    <!-- Detail -->
+    <main class="detail" id="detail">
+      <div class="empty-state">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><circle cx="11" cy="9" r="2"/><path d="M7 17c0-2.2 1.8-4 4-4s4 1.8 4 4"/></svg>
+        <p>Select a student to view their full audit log</p>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script type="module">
+import { STUDENTS, EXAM_META } from './src/data/students.js';
+
+/* ── Helpers ─────────────────────────────────────────────── */
+const $ = id => document.getElementById(id);
+
+function scoreColor(s) {
+  if (s >= 80) return '#1d9e75';
+  if (s >= 60) return '#ba7517';
+  return '#e24b4a';
+}
+
+function typeColors(type) {
+  const map = {
+    danger:  { bg: 'var(--danger-bg)',  text: 'var(--danger-text)',  dot: 'var(--danger-dot)'  },
+    warning: { bg: 'var(--warning-bg)', text: 'var(--warning-text)', dot: 'var(--warning-dot)' },
+    info:    { bg: 'var(--info-bg)',    text: 'var(--info-text)',     dot: 'var(--info-dot)'    },
+    ok:      { bg: 'transparent',       text: 'var(--ok-dot)',        dot: 'var(--ok-dot)'      },
+  };
+  return map[type] || map.ok;
+}
+
+function iconSvg(name) {
+  const icons = {
+    'device-mobile': '<rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/>',
+    'users':         '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+    'eye-off':       '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/>',
+    'layout-2':      '<rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/>',
+    'volume':        '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>',
+    'book':          '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+  };
+  return `<svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke-width:1.8;stroke-linecap:round;fill:none;">${icons[name] || ''}</svg>`;
+}
+
+function initials(name) {
+  return name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
+}
+
+/* ── Metrics ─────────────────────────────────────────────── */
+function renderMetrics() {
+  const active  = STUDENTS.length;
+  const flags   = STUDENTS.reduce((a, s) => a + s.flags.length, 0);
+  const risk    = STUDENTS.filter(s => s.score < 60).length;
+  const avg     = Math.round(STUDENTS.reduce((a, s) => a + s.score, 0) / STUDENTS.length);
+  $('m-active').textContent = active;
+  $('m-flags').textContent  = flags;
+  $('m-risk').textContent   = risk;
+  $('m-avg').textContent    = avg;
+}
+
+/* ── Timer ───────────────────────────────────────────────── */
+let secs = 90 * 60;
+function tick() {
+  secs = Math.max(0, secs - 1);
+  const m = String(Math.floor(secs / 60)).padStart(2, '0');
+  const s = String(secs % 60).padStart(2, '0');
+  $('timer').textContent = `${m}:${s}`;
+}
+setInterval(tick, 1000);
+
+/* ── Filter ──────────────────────────────────────────────── */
+let activeFilter = 'all';
+let selectedId   = null;
+
+$('filter-row').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter = btn.dataset.f;
+  renderList();
+});
+
+function filteredStudents() {
+  if (activeFilter === 'high-risk') return STUDENTS.filter(s => s.status === 'high-risk');
+  if (activeFilter === 'flagged')   return STUDENTS.filter(s => s.flags.length > 0);
+  if (activeFilter === 'clean')     return STUDENTS.filter(s => s.flags.length === 0);
+  return STUDENTS;
+}
+
+/* ── Sidebar list ────────────────────────────────────────── */
+function renderList() {
+  const list = $('student-list');
+  const data = filteredStudents();
+  $('count-label').textContent = `${data.length} student${data.length !== 1 ? 's' : ''}`;
+  list.innerHTML = '';
+  data.forEach(s => {
+    const col  = scoreColor(s.score);
+    const hasDanger  = s.flags.some(f => f.type === 'danger');
+    const hasWarning = s.flags.some(f => f.type === 'warning');
+    const dotCol = hasDanger ? 'var(--danger-dot)' : hasWarning ? 'var(--warning-dot)' : s.flags.length ? 'var(--info-dot)' : 'var(--ok-dot)';
+    const flagBg   = hasDanger ? 'var(--danger-bg)' : hasWarning ? 'var(--warning-bg)' : 'var(--info-bg)';
+    const flagTxt  = hasDanger ? 'var(--danger-text)' : hasWarning ? 'var(--warning-text)' : 'var(--info-text)';
+    const row = document.createElement('div');
+    row.className = 'student-row' + (s.id === selectedId ? ' active' : '');
+    row.innerHTML = `
+      <div class="status-dot" style="background:${dotCol};"></div>
+      <div class="avatar" style="background:${col}22;color:${col};">${initials(s.name)}</div>
+      <div class="student-info">
+        <div class="student-name">${s.name}</div>
+        <div class="student-sid">${s.id}</div>
+      </div>
+      <div class="score-chip" style="color:${col};">${s.score}</div>
+      ${s.flags.length ? `<div class="flag-badge" style="background:${flagBg};color:${flagTxt};">${s.flags.length}</div>` : ''}
+    `;
+    row.addEventListener('click', () => selectStudent(s.id));
+    list.appendChild(row);
+  });
+}
+
+/* ── Detail panel ────────────────────────────────────────── */
+let gazeChart = null;
+let audioChart = null;
+
+function selectStudent(id) {
+  selectedId = id;
+  renderList();
+  const s = STUDENTS.find(x => x.id === id);
+  if (!s) return;
+
+  const col     = scoreColor(s.score);
+  const r       = 28;
+  const circ    = +(2 * Math.PI * r).toFixed(1);
+  const dash    = +((s.score / 100) * circ).toFixed(1);
+  const riskTxt = s.score >= 80 ? 'Low risk' : s.score >= 60 ? 'Moderate risk — monitor closely' : 'High risk — immediate review required';
+  const riskBg  = s.score >= 80 ? 'var(--info-bg)' : s.score >= 60 ? 'var(--warning-bg)' : 'var(--danger-bg)';
+  const riskCol = s.score >= 80 ? 'var(--info-text)' : s.score >= 60 ? 'var(--warning-text)' : 'var(--danger-text)';
+
+  const tlEvents = s.timeline.map(e => {
+    const c = typeColors(e.type);
+    return `<div class="tl-event" style="left:${(e.t*100).toFixed(1)}%;background:${c.dot};"></div>`;
+  }).join('');
+
+  const flagsHtml = s.flags.length === 0
+    ? `<p style="font-size:12px;color:var(--text-3);padding:0.5rem 0;">No behavioural flags recorded for this session.</p>`
+    : s.flags.map((f, i) => {
+        const c = typeColors(f.type);
+        return `
+        <div class="flag-item">
+          <div class="flag-icon-wrap" style="background:${c.bg};color:${c.text};">
+            ${iconSvg(f.icon)}
+          </div>
+          <div class="flag-body">
+            <div class="flag-title">${f.title}</div>
+            <div class="flag-desc">${f.description}</div>
+            <div class="flag-meta">
+              <span class="flag-chip" style="background:${c.bg};color:${c.text};">${f.time}</span>
+              ${f.confidence ? `<span class="flag-chip" style="background:var(--bg-3);color:var(--text-2);">${f.confidence}% confidence</span>` : ''}
+              ${f.duration ? `<span class="flag-chip" style="background:var(--bg-3);color:var(--text-2);">Duration: ${f.duration}</span>` : ''}
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+
+  $('detail').innerHTML = `
+    <div class="detail-inner">
+      <div class="detail-header">
+        <div>
+          <div class="detail-name">${s.name}</div>
+          <div class="detail-meta">${s.id} &nbsp;·&nbsp; ${s.email} &nbsp;·&nbsp; ${s.flags.length} flag${s.flags.length !== 1 ? 's' : ''} recorded</div>
+        </div>
+        <div class="risk-badge" style="background:${riskBg};color:${riskCol};">${riskTxt}</div>
+      </div>
+
+      <div class="top-cards">
+        <div class="score-card">
+          <div class="ring-wrap">
+            <svg width="72" height="72" viewBox="0 0 72 72">
+              <circle cx="36" cy="36" r="${r}" fill="none" stroke="var(--bg-3)" stroke-width="6"/>
+              <circle cx="36" cy="36" r="${r}" fill="none" stroke="${col}" stroke-width="6"
+                stroke-dasharray="${dash} ${circ}" stroke-linecap="round"/>
+            </svg>
+            <div class="ring-num" style="color:${col};">${s.score}</div>
+          </div>
+          <div>
+            <div class="score-label">Integrity score</div>
+            <div class="score-desc" style="color:${col};">${riskTxt}</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total flags</div>
+          <div class="stat-value c-${s.flags.some(f=>f.type==='danger') ? 'danger' : s.flags.length ? 'warning' : 'ok'}">${s.flags.length}</div>
+          <div class="stat-sub">${s.flags.filter(f=>f.type==='danger').length} critical &nbsp;·&nbsp; ${s.flags.filter(f=>f.type==='warning').length} warning</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Session progress</div>
+          <div class="stat-value">${Math.round((90 * 60 - secs) / 60)}<span style="font-size:14px;font-weight:400;color:var(--text-3);">min</span></div>
+          <div class="stat-sub">of 90 min elapsed</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Activity timeline</div>
+        <div class="tl-track">${tlEvents}</div>
+        <div class="tl-labels">
+          <span>09:00</span><span>09:22</span><span>09:45</span><span>10:07</span><span>10:30</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Gaze stability over time</div>
+        <div class="chart-wrap"><canvas id="gaze-chart" role="img" aria-label="Gaze stability score over the exam session for ${s.name}."></canvas></div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Audio activity (dB level)</div>
+        <div class="chart-wrap"><canvas id="audio-chart" role="img" aria-label="Audio noise level over the exam session for ${s.name}."></canvas></div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Behavioural flags — full log</div>
+        ${flagsHtml}
+      </div>
+
+      <div class="action-row">
+        <button class="btn" onclick="window.print()">Print audit log</button>
+        <button class="btn btn-danger">Escalate to supervisor</button>
+      </div>
+    </div>
+  `;
+
+  renderCharts(s);
+}
+
+function renderCharts(s) {
+  if (gazeChart)  { gazeChart.destroy();  gazeChart  = null; }
+  if (audioChart) { audioChart.destroy(); audioChart = null; }
+
+  const labels = s.gazeData.map((_, i) => {
+    const mins = Math.round((i / (s.gazeData.length - 1)) * 90);
+    const h = 9 + Math.floor(mins / 60);
+    const m = String(mins % 60).padStart(2, '0');
+    return `${h}:${m}`;
+  });
+
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const gridCol  = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
+  const textCol  = isDark ? '#6b6a67' : '#8f8e8a';
+
+  const baseOpts = {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: { duration: 300 },
+    plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
+    scales: {
+      x: { ticks: { color: textCol, font: { size: 10 }, maxTicksLimit: 6 }, grid: { color: gridCol }, border: { display: false } },
+      y: { ticks: { color: textCol, font: { size: 10 } }, grid: { color: gridCol }, border: { display: false } },
+    },
+  };
+
+  gazeChart = new Chart(document.getElementById('gaze-chart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Gaze score',
+        data: s.gazeData,
+        borderColor: '#1d9e75',
+        backgroundColor: 'rgba(29,158,117,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        fill: true,
+        tension: 0.4,
+      }],
+    },
+    options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 100 } } },
+  });
+
+  audioChart = new Chart(document.getElementById('audio-chart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'dB level',
+        data: s.audioData,
+        backgroundColor: s.audioData.map(v => v > 40 ? 'rgba(226,75,74,0.7)' : 'rgba(55,138,221,0.5)'),
+        borderRadius: 2,
+        borderSkipped: false,
+      }],
+    },
+    options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 0, max: 80 } } },
+  });
+}
+
+function exportReport() {
+  alert('In the full build, this exports a PDF report via the FastAPI backend. Hook up /api/report/{exam_id} to generate.');
+}
+
+/* ── Boot ────────────────────────────────────────────────── */
+renderMetrics();
+renderList();
+selectStudent('110195067');
+</script>
+
+</body>
+</html>
