@@ -1,4 +1,4 @@
-# AI — Exam Monitoring Dashboard
+# AI Exam Monitor — Exam Monitoring Dashboard
 
 COMP8567 Internship Project · University of Windsor · Team 04
 
@@ -38,6 +38,8 @@ exam-monitor/
 
 ### Option 1 — Direct open
 Just open `index.html` in Chrome, Edge, or Firefox.
+
+> **Note:** Because the page uses ES modules (`import`), Chrome may block local file imports due to CORS. Use Option 2 if that happens.
 
 ### Option 2 — Local server (recommended)
 
@@ -79,7 +81,7 @@ Install the **Live Server** extension, right-click `index.html` → "Open with L
 
 ---
 
-## Connecting to the real backend (soon)
+## Connecting to the real backend (Week 4–7)
 
 Replace the static import in `index.html`:
 
@@ -127,13 +129,11 @@ The FastAPI endpoint should return the same shape as `src/data/students.js`.
 
 ---
 
+## Jira epic mapping
 
-
-<img width="1527" height="804" alt="image" src="https://github.com/user-attachments/assets/1fa55150-a6db-4d2c-a96c-5b62dc60c7ec" />
-
-
-<img width="880" height="663" alt="image" src="https://github.com/user-attachments/assets/058cbf6d-94a1-4997-bbed-d7e17a0b388f" />
-
-
-<img width="900" height="705" alt="image" src="https://github.com/user-attachments/assets/b4b059cb-5a4b-472d-b6a4-2ad752a0b800" />
-
+| Epic | Covers |
+|------|--------|
+| Epic 1: UI/UX & Frontend Core | This prototype, React migration |
+| Epic 2: Backend & Database | FastAPI routes, MongoDB schemas |
+| Epic 3: AI Engine | MediaPipe, YOLOv8, Audio API |
+| Epic 4: QA & Reporting | This dashboard + automated testing |

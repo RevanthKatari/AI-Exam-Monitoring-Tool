@@ -1,7 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+*.pt
+
+# Node
+node_modules/
+dist/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
-node_modules/
-.env
-*.log
-dist/
-.vscode/
+
+# Claude Code local session files
+.claude/

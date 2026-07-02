@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+yolov8n.pt
+*.egg-info/
