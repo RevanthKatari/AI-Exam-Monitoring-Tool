@@ -1,6 +1,6 @@
-# AI Exam Monitor — Exam Monitoring Dashboard
+# AI Exam Monitor
 
-COMP8567 Internship Project · University of Windsor · Team 04
+COMP8567 Internship Project, University of Windsor, Team 04
 
 ## Team
 
@@ -15,44 +15,56 @@ COMP8567 Internship Project · University of Windsor · Team 04
 
 ## What this is
 
-A functional prototype of the instructor-facing **Exam Monitoring Dashboard** for the AI Exam Monitoring Tool. This frontend prototype is fully self-contained — no build step, no npm install. Open `index.html` in a browser and it works.
+An AI-powered online exam monitoring tool. An instructor dashboard tracks students during an exam using webcam gaze tracking, object detection, and audio analysis, and flags anything that looks like academic dishonesty.
 
----
+The repo has two parts:
+
+- **`proctorAI/`** is the actual application: FastAPI backend, MongoDB, and a React + Tailwind frontend. See [proctorAI/README.md](proctorAI/README.md) for setup and API docs.
+- **`index.html` / `src/`** at the repo root is the original vanilla JS dashboard prototype we built first to lock down the UI before writing any backend code. It's kept here for reference and still runs standalone with no build step.
 
 ## Project structure
 
 ```
-exam-monitor/
-├── index.html                  ← Main dashboard (open this)
+.
+├── index.html                  ← original prototype dashboard
 ├── src/
-│   ├── data/
-│   │   └── students.js         ← Mock student data + audit logs
-│   └── styles/
-│       └── main.css            ← Design tokens + all component styles
-└── README.md
+│   ├── data/students.js        ← mock student data used by the prototype
+│   └── styles/main.css
+├── proctorAI/                  ← the real app
+│   ├── frontend/                React 18 + Tailwind + Vite
+│   ├── backend/                 FastAPI + MediaPipe + YOLOv8 + MongoDB
+│   └── docker-compose.yml
+└── Team04_Interim_Report.docx
 ```
 
----
+## Running the full app
 
-## How to run
+```bash
+cd proctorAI
+docker compose up --build
+```
 
-### Option 1 — Direct open
-Just open `index.html` in Chrome, Edge, or Firefox.
+Frontend on `http://localhost:5173`, backend on `http://localhost:8000`. Full instructions, API endpoints, and demo flow are in [proctorAI/README.md](proctorAI/README.md).
 
-> **Note:** Because the page uses ES modules (`import`), Chrome may block local file imports due to CORS. Use Option 2 if that happens.
+## Running the original prototype
 
-### Option 2 — Local server (recommended)
+The prototype at the repo root is just static files, useful if you want to see the design without spinning up the backend.
+
+### Option 1: open it directly
+Open `index.html` in Chrome, Edge, or Firefox.
+
+> Since the page uses ES modules (`import`), Chrome sometimes blocks local file imports over CORS. If that happens, use Option 2 instead.
+
+### Option 2: local server (recommended)
 
 **Python:**
 ```bash
-cd exam-monitor
 python -m http.server 8080
 # open http://localhost:8080
 ```
 
 **Node (npx):**
 ```bash
-cd exam-monitor
 npx serve .
 # open the URL it prints
 ```
@@ -62,78 +74,54 @@ Install the **Live Server** extension, right-click `index.html` → "Open with L
 
 ---
 
-## Features in this prototype
+## Features in the prototype
 
-- Live countdown timer (90-minute exam)
-- Metric strip: active students, total flags, high-risk count, avg integrity score
+- Live countdown timer (90 minute exam)
+- Metric strip: active students, total flags, high-risk count, average integrity score
 - Sidebar student list with colour-coded integrity scores
-- Filter by: All / High risk / Flagged / Clean
-- Click any student → full detail panel:
-  - Integrity score ring
-  - Risk badge (Low / Moderate / High)
-  - Activity timeline with flag markers
-  - Gaze stability chart (Chart.js line)
-  - Audio activity chart (Chart.js bar — red spikes = anomaly)
-  - Full flag log with timestamp, confidence %, duration, and description
-  - Escalate / Print actions
-- Dark mode (auto, via `prefers-color-scheme`)
+- Filter by All / High risk / Flagged / Clean
+- Click a student to open the detail panel: integrity score ring, risk badge, activity timeline, gaze stability chart, audio activity chart, full flag log with timestamp/confidence/duration, escalate and print actions
+- Dark mode via `prefers-color-scheme`
 - Responsive layout
 
----
-
-## Connecting to the real backend (Week 4–7)
-
-Replace the static import in `index.html`:
-
-```js
-// Current (mock):
-import { STUDENTS, EXAM_META } from './src/data/students.js';
-
-// Replace with a fetch call to your FastAPI backend:
-const res = await fetch('http://localhost:8000/api/sessions/comp3430-a');
-const { students, exam } = await res.json();
-```
-
-The FastAPI endpoint should return the same shape as `src/data/students.js`.
-
----
+The mock data shape in `src/data/students.js` was frozen early and used as the target API contract, so when we wired up the real backend the frontend didn't need to change to consume live data.
 
 ## Tech stack (full system)
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | Vanilla JS + Chart.js (this prototype) → React 18 + TailwindCSS (full build) |
+| Frontend | React 18, TailwindCSS, Vite, Chart.js (prototype was vanilla JS) |
 | Backend | FastAPI (Python 3.11) |
-| AI — face/gaze | MediaPipe Face Mesh |
-| AI — objects | YOLOv8 Nano via OpenCV |
+| AI, gaze | MediaPipe FaceLandmarker (Tasks API) |
+| AI, objects | YOLOv8 Nano |
 | Audio | Web Audio API |
-| Database | MongoDB Atlas (M0 free tier) |
+| Database | MongoDB (local for dev, Atlas M0 for deployment) |
 | Stream | WebRTC + WebSockets |
 | Project mgmt | Jira Cloud + GitHub |
 
----
-
-## Roadmap (9-week sprint)
+## Roadmap (9 week sprint, June 1 to July 31)
 
 | Week | Milestone |
 |------|-----------|
 | 1 | Infrastructure, GitHub, scaffolding |
 | 2 | Auth portals, JWT role-based access |
 | 3 | WebRTC stream acquisition |
-| 4 | AI Module I — MediaPipe gaze tracking |
-| 5 | AI Module II — YOLOv8 object detection |
-| 6 | Audio analysis + temporal state logic |
-| 7 | Reporting engine (this dashboard, full version) |
+| 4 | AI Module I, MediaPipe gaze tracking |
+| 5 | AI Module II, YOLOv8 object detection |
+| 6 | Audio analysis and temporal state logic |
+| 7 | Reporting engine (full dashboard version) |
 | 8 | Stress testing, multi-user simulation |
 | 9 | Deployment, demo, academic defence |
 
----
+Weeks 1 to 4 are done. We're in week 5 now, tuning YOLOv8 detection thresholds.
 
 ## Jira epic mapping
 
 | Epic | Covers |
 |------|--------|
-| Epic 1: UI/UX & Frontend Core | This prototype, React migration |
+| Epic 1: UI/UX & Frontend Core | Prototype, React migration |
 | Epic 2: Backend & Database | FastAPI routes, MongoDB schemas |
 | Epic 3: AI Engine | MediaPipe, YOLOv8, Audio API |
-| Epic 4: QA & Reporting | This dashboard + automated testing |
+| Epic 4: QA & Reporting | Dashboard, automated testing |
+
+See [Team04_Interim_Report.docx](Team04_Interim_Report.docx) for the full progress writeup, including scope changes and challenges we ran into.
