@@ -1,6 +1,7 @@
 import asyncio
 import base64
 import json
+import logging
 
 import cv2
 import numpy as np
@@ -15,6 +16,7 @@ from app.core.config import settings
 from app.db.mongo import db
 
 router = APIRouter()
+logger = logging.getLogger("uvicorn.error")
 
 MAX_TELEMETRY_POINTS = 120
 
@@ -55,6 +57,10 @@ async def _ensure_student(session_id: str, student_id: str):
         "integrity_score": 100,
         "gazeData": [],
         "audioData": [],
+        "attempt_status": "in_progress",
+        "started_at": None,
+        "submitted_at": None,
+        "answers": {},
     })
 
 
@@ -115,8 +121,10 @@ async def websocket_endpoint(ws: WebSocket, session_id: str, student_id: str):
                             flag["timestamp"] = payload["timestamp"]
                             await db.flags.insert_one(flag)
                             await update_score(session_id, student_id)
-                except Exception as exc:
-                    print(f"Frame processing error: {exc}")
+                except Exception:
+                    logger.exception(
+                        "Frame processing error for session=%s student=%s", session_id, student_id
+                    )
 
             elif ptype == "audio":
                 db_level = payload.get("db", 0)

@@ -1,10 +1,27 @@
 from fastapi import APIRouter, Depends, HTTPException
+from pymongo import ReturnDocument
 
 from app.core.security import create_access_token, get_instructor, hash_password, verify_password
 from app.db.mongo import db
 from app.models.user import PendingInstructor, TokenResponse, UserLogin, UserRegister
 
 router = APIRouter()
+
+# Self-registered students previously got no student_id at all, and the frontend
+# silently fell back to a hardcoded demo student's ID — meaning every new student
+# who registered was actually logged in AS that other (seeded) student. Generate a
+# real, unique student_id atomically so each registrant gets their own identity.
+STUDENT_ID_RANGE_START = 900000000
+
+
+async def _next_student_id() -> str:
+    counter = await db.counters.find_one_and_update(
+        {"_id": "student_id"},
+        {"$inc": {"seq": 1}},
+        upsert=True,
+        return_document=ReturnDocument.AFTER,
+    )
+    return str(STUDENT_ID_RANGE_START + counter["seq"])
 
 
 @router.post("/register", response_model=TokenResponse)
@@ -21,8 +38,20 @@ async def register(body: UserRegister):
             {"role": "instructor", "status": "approved"}
         )
         account_status = "approved" if approved_instructors == 0 else "pending"
+        student_id = None
     else:
         account_status = "approved"
+        provided_id = (body.student_id or "").strip()
+        if provided_id:
+            id_taken = await db.users.find_one({"student_id": provided_id, "role": "student"})
+            if id_taken:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Student ID {provided_id} is already registered to another account",
+                )
+            student_id = provided_id
+        else:
+            student_id = await _next_student_id()
 
     await db.users.insert_one({
         "name": body.name,
@@ -30,7 +59,17 @@ async def register(body: UserRegister):
         "password_hash": hash_password(body.password),
         "role": body.role,
         "status": account_status,
+        "student_id": student_id,
     })
+
+    if body.role == "student":
+        # If an instructor already put this student_id on a roster (with a
+        # placeholder name/email), sync in the real identity now that they've
+        # registered, so the dashboard doesn't keep showing a placeholder.
+        await db.students.update_many(
+            {"student_id": student_id},
+            {"$set": {"name": body.name, "email": body.email}},
+        )
 
     if account_status == "pending":
         return TokenResponse(
@@ -40,7 +79,7 @@ async def register(body: UserRegister):
         )
 
     token = create_access_token(body.email, body.role)
-    return TokenResponse(status="approved", access_token=token, role=body.role, student_id=None)
+    return TokenResponse(status="approved", access_token=token, role=body.role, student_id=student_id)
 
 
 @router.post("/login", response_model=TokenResponse)

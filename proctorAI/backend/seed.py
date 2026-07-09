@@ -49,7 +49,21 @@ async def seed():
         "section": "Section A",
         "instructor_id": "prof@test.com",
         "duration_minutes": 90,
-        "started_at": datetime.now(timezone.utc),
+        "timer_mode": "individual",
+        "questions": [
+            {
+                "id": "q1",
+                "prompt": "Explain the time complexity of inserting an element at the beginning of a "
+                "dynamic array. Include amortized analysis in your answer.",
+            },
+            {
+                "id": "q2",
+                "prompt": "Compare the worst-case lookup time of a balanced binary search tree versus "
+                "a hash table, and describe a scenario where each is preferable.",
+            },
+        ],
+        "created_at": datetime.now(timezone.utc),
+        "started_at": None,
         "enrolled_students": [s["student_id"] for s in STUDENTS],
     })
 
@@ -60,6 +74,10 @@ async def seed():
             "integrity_score": 100,
             "gazeData": [],
             "audioData": [],
+            "attempt_status": "not_started",
+            "started_at": None,
+            "submitted_at": None,
+            "answers": {},
             "joined_at": datetime.now(timezone.utc),
         })
 

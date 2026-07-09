@@ -9,6 +9,7 @@ export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
+  const [studentIdInput, setStudentIdInput] = useState('')
   const [role, setRoleState] = useState('instructor')
   const [isRegister, setIsRegister] = useState(false)
   const [error, setError] = useState('')
@@ -20,7 +21,13 @@ export default function Login() {
     setNotice('')
     try {
       const res = isRegister
-        ? await apiClient.post('/auth/register', { name, email, password, role })
+        ? await apiClient.post('/auth/register', {
+            name,
+            email,
+            password,
+            role,
+            student_id: role === 'student' ? studentIdInput.trim() || null : null,
+          })
         : await apiClient.post('/auth/login', { email, password })
 
       if (res.data.status === 'pending') {
@@ -36,9 +43,9 @@ export default function Login() {
       const studentId = res.data.student_id
 
       if (userRole === 'student') {
-        navigate(`/exam?session=${DEMO_SESSION}&student=${studentId || '110195067'}`)
+        navigate(`/exam?session=${DEMO_SESSION}&student=${studentId || ''}`)
       } else {
-        navigate(`/dashboard?session=${DEMO_SESSION}`)
+        navigate('/exams')
       }
     } catch (err) {
       setError(err.response?.data?.detail || 'Authentication failed')
@@ -87,6 +94,22 @@ export default function Login() {
                   </p>
                 )}
               </div>
+              {role === 'student' && (
+                <div>
+                  <label className="block text-xs text-[var(--text-2)] mb-1">Student ID</label>
+                  <input
+                    type="text"
+                    value={studentIdInput}
+                    onChange={(e) => setStudentIdInput(e.target.value)}
+                    placeholder="e.g. 110195067"
+                    className="w-full px-3 py-2 text-sm border border-[var(--border-md)] rounded-[var(--radius-sm)] bg-[var(--bg-2)] text-[var(--text)]"
+                  />
+                  <p className="mt-1 text-[10px] text-[var(--text-3)]">
+                    Enter the student ID your instructor gave you — this is how you get matched to their exam roster.
+                    Leave blank only if you don't have one yet.
+                  </p>
+                </div>
+              )}
             </>
           )}
           <div>

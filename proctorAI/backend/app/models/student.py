@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -28,7 +30,33 @@ class StudentResponse(BaseModel):
     email: str
     score: int
     status: str
+    attempt_status: str = "not_started"
+    started_at: datetime | None = None
+    submitted_at: datetime | None = None
+    reference_photo: str | None = None
+    id_capture_photo: str | None = None
     flags: list[FlagResponse]
     timeline: list[TimelineEvent]
     gazeData: list[int] = Field(default_factory=list)
     audioData: list[int] = Field(default_factory=list)
+
+
+class AnswerSubmit(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    student_id: str
+    question_id: str
+    text: str
+
+
+class AttemptStudentRequest(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    student_id: str
+
+
+class IdPhotoSubmit(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    student_id: str
+    photo: str  # base64 data URL

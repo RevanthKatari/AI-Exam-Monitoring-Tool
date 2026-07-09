@@ -1,4 +1,12 @@
-export default function Topbar({ examMeta, secondsRemaining, onExport, pendingCount = 0, onOpenApprovals }) {
+export default function Topbar({
+  examMeta,
+  secondsRemaining,
+  onExport,
+  pendingCount = 0,
+  onOpenApprovals,
+  identityPendingCount = 0,
+  onOpenIdentityReview,
+}) {
   const m = String(Math.floor(secondsRemaining / 60)).padStart(2, '0')
   const s = String(secondsRemaining % 60).padStart(2, '0')
 
@@ -25,6 +33,19 @@ export default function Topbar({ examMeta, secondsRemaining, onExport, pendingCo
           <div className="w-1.5 h-1.5 rounded-full bg-[var(--danger-dot)] live-dot" />
           Live
         </div>
+        {identityPendingCount > 0 && (
+          <button
+            type="button"
+            onClick={onOpenIdentityReview}
+            className="flex items-center gap-1.5 text-xs font-medium px-3.5 py-1.5 rounded-[var(--radius-sm)] border border-[var(--border-md)] bg-[var(--info-bg)] text-[var(--info-text)] hover:opacity-90 transition-colors"
+          >
+            <svg className="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="4" />
+              <path strokeLinecap="round" d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
+            {identityPendingCount} identity check{identityPendingCount > 1 ? 's' : ''}
+          </button>
+        )}
         {pendingCount > 0 && (
           <button
             type="button"

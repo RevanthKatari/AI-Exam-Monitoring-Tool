@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { scoreColor, initials } from '../utils/helpers'
 
 const FILTERS = [
@@ -7,11 +8,23 @@ const FILTERS = [
   { key: 'clean', label: 'Clean' },
 ]
 
+const ATTEMPT_LABELS = {
+  not_started: 'Not started',
+  in_progress: 'In progress',
+  submitted: 'Submitted',
+}
+
 export default function StudentSidebar({ students, selectedId, onSelect, activeFilter, onFilterChange }) {
+  const [search, setSearch] = useState('')
+
   const filtered = students.filter((s) => {
-    if (activeFilter === 'high-risk') return s.status === 'high-risk'
-    if (activeFilter === 'flagged') return s.flags.length > 0
-    if (activeFilter === 'clean') return s.flags.length === 0
+    if (activeFilter === 'high-risk' && s.status !== 'high-risk') return false
+    if (activeFilter === 'flagged' && s.flags.length === 0) return false
+    if (activeFilter === 'clean' && s.flags.length !== 0) return false
+    if (search.trim()) {
+      const q = search.trim().toLowerCase()
+      if (!s.name.toLowerCase().includes(q) && !s.id.toLowerCase().includes(q)) return false
+    }
     return true
   })
 
@@ -22,6 +35,15 @@ export default function StudentSidebar({ students, selectedId, onSelect, activeF
         <span className="text-[11px] text-[var(--text-3)]">
           {filtered.length} student{filtered.length !== 1 ? 's' : ''}
         </span>
+      </div>
+      <div className="px-4 py-2.5 border-b border-[var(--border)] shrink-0">
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search by name or ID…"
+          className="w-full px-2.5 py-1.5 text-xs border border-[var(--border-md)] rounded-[var(--radius-sm)] bg-[var(--bg-2)] text-[var(--text)]"
+        />
       </div>
       <div className="flex gap-1.5 px-4 py-2.5 border-b border-[var(--border)] shrink-0 flex-wrap">
         {FILTERS.map((f) => (
@@ -53,6 +75,7 @@ export default function StudentSidebar({ students, selectedId, onSelect, activeF
                 : 'var(--ok-dot)'
           const flagBg = hasDanger ? 'var(--danger-bg)' : hasWarning ? 'var(--warning-bg)' : 'var(--info-bg)'
           const flagTxt = hasDanger ? 'var(--danger-text)' : hasWarning ? 'var(--warning-text)' : 'var(--info-text)'
+          const attemptStatus = s.attempt_status || 'not_started'
 
           return (
             <div
@@ -74,7 +97,20 @@ export default function StudentSidebar({ students, selectedId, onSelect, activeF
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs font-medium text-[var(--text)] truncate">{s.name}</div>
-                <div className="text-[10px] text-[var(--text-3)]">{s.id}</div>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] text-[var(--text-3)]">{s.id}</span>
+                  <span
+                    className={`text-[9px] px-1 py-px rounded-full ${
+                      attemptStatus === 'submitted'
+                        ? 'bg-[var(--info-bg)] text-[var(--info-text)]'
+                        : attemptStatus === 'in_progress'
+                          ? 'bg-[var(--ok-dot)]/10 text-[var(--ok-dot)]'
+                          : 'bg-[var(--bg-3)] text-[var(--text-3)]'
+                    }`}
+                  >
+                    {ATTEMPT_LABELS[attemptStatus] || attemptStatus}
+                  </span>
+                </div>
               </div>
               <div className="text-xs font-medium shrink-0" style={{ color: col }}>{s.score}</div>
               {s.flags.length > 0 && (
@@ -88,6 +124,9 @@ export default function StudentSidebar({ students, selectedId, onSelect, activeF
             </div>
           )
         })}
+        {filtered.length === 0 && (
+          <p className="text-xs text-[var(--text-3)] text-center py-6">No students match.</p>
+        )}
       </div>
     </aside>
   )

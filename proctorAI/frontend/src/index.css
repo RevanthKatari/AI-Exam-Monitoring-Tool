@@ -68,6 +68,47 @@ body {
   animation: blink 1.4s ease-in-out infinite;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-md); border-radius: 3px; }
+
+/*
+ * Printing an audit log or session report was clipping content: the dashboard's
+ * scrollable panes (h-screen + overflow-y-auto) only rasterize what's within the
+ * viewport at print time, so anything past one screen's worth of flags/charts never
+ * made it onto the page. Force every scroll container to lay out at full content
+ * height for print, hide screen-only chrome, and keep report cards from splitting
+ * across a page boundary.
+ */
+@media print {
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  .overflow-y-auto,
+  .overflow-hidden,
+  main {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .report-student {
+    break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

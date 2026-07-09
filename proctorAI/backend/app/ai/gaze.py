@@ -1,3 +1,4 @@
+import threading
 import urllib.request
 from pathlib import Path
 
@@ -17,6 +18,11 @@ YAW_THRESHOLD = 20
 PITCH_THRESHOLD = 15
 
 _landmarker: FaceLandmarker | None = None
+# The FaceLandmarker instance is shared across every concurrent student WebSocket
+# connection (each frame is processed via asyncio.to_thread on a worker thread), and
+# MediaPipe's tasks API is not guaranteed safe for concurrent detect() calls on one
+# instance. Serialize inference with a lock so multiple students never corrupt shared state.
+_landmarker_lock = threading.Lock()
 
 
 def _get_landmarker() -> FaceLandmarker:
@@ -39,7 +45,8 @@ def _get_landmarker() -> FaceLandmarker:
 def _landmarks_from_frame(frame):
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
-    result = _get_landmarker().detect(mp_image)
+    with _landmarker_lock:
+        result = _get_landmarker().detect(mp_image)
     if not result.face_landmarks:
         return None
     return result.face_landmarks[0]

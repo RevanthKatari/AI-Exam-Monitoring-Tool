@@ -1,6 +1,12 @@
+import threading
+
 from ultralytics import YOLO
 
 _model = None
+# Same reasoning as gaze.py's lock: this YOLO model instance is shared across every
+# concurrent student's WebSocket frame processing thread. Ultralytics models are not
+# documented as thread-safe for concurrent inference, so serialize calls.
+_model_lock = threading.Lock()
 
 FLAGGED_CLASSES = {
     67: ("cell phone", "danger", "Phone detected"),
@@ -22,7 +28,8 @@ def _get_model():
 
 def detect_objects(frame) -> list[dict]:
     """Returns list of flag dicts for any detected prohibited objects."""
-    results = _get_model()(frame, verbose=False)[0]
+    with _model_lock:
+        results = _get_model()(frame, verbose=False)[0]
     flags = []
     person_count = 0
 
