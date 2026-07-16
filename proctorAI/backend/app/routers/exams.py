@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 import requests
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 
-from app.core.security import get_instructor, get_student
+from app.core.security import get_instructor, get_student, hash_password
 from app.db.mongo import db
 from app.models.exam import (
     ExamCreate,
@@ -26,6 +26,7 @@ router = APIRouter()
 logger = logging.getLogger("uvicorn.error")
 
 MAX_PHOTO_URL_BYTES = 3 * 1024 * 1024
+DEFAULT_STUDENT_PASSWORD = "test123"
 
 
 def _mongo_precision_now() -> datetime:
@@ -58,6 +59,27 @@ def _fetch_photo_as_data_url(url: str) -> str | None:
         return None
 
 
+async def _ensure_student_login(student_id: str, name: str, email: str):
+    """Auto-provision a login account (password "test123") for a roster student so
+    they can sign in immediately without self-registering first. Only creates one
+    if neither this student_id nor this email already has an account — self-registration
+    still works normally and will just find/use the account created here."""
+    existing = await db.users.find_one({"student_id": student_id, "role": "student"})
+    if existing:
+        return
+    email_taken = await db.users.find_one({"email": email})
+    if email_taken:
+        return
+    await db.users.insert_one({
+        "name": name,
+        "email": email,
+        "password_hash": hash_password(DEFAULT_STUDENT_PASSWORD),
+        "role": "student",
+        "status": "approved",
+        "student_id": student_id,
+    })
+
+
 async def _upsert_roster_student(session_id: str, student_id: str, name: str | None, email: str | None):
     if not name or not email:
         student_user = await db.users.find_one({"student_id": student_id})
@@ -65,6 +87,8 @@ async def _upsert_roster_student(session_id: str, student_id: str, name: str | N
             student_user = await db.users.find_one({"email": {"$regex": student_id}})
         name = name or (student_user["name"] if student_user else f"Student {student_id}")
         email = email or (student_user["email"] if student_user else f"{student_id}@uwindsor.ca")
+
+    await _ensure_student_login(student_id, name, email)
 
     await db.students.update_one(
         {"session_id": session_id, "student_id": student_id},
