@@ -23,3 +23,10 @@ Thumbs.db
 
 # Claude Code local session files
 .claude/
+
+# Performance testing tools (downloaded binaries, not project source)
+tools/
+proctorAI/backend/jmeter.log
+# JMeter's generated HTML dashboard vendors its own bootstrap/jquery/flot copies —
+# regenerate from results.jtl instead of committing them (see TESTING.md).
+proctorAI/backend/perf-tests/report/

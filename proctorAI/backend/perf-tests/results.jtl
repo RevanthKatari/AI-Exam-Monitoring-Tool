@@ -1,0 +1,1005 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1784733332241,367,POST /auth/login (instructor),200,OK,0 - Instructor  Exam Setup 1-1,text,true,,401,225,1,1,http://localhost:8000/auth/login,362,0,32
+1784733333449,24,"DELETE /api/exams/{session} (clean slate, ignore failure)",200,OK,0 - Instructor  Exam Setup 1-1,text,true,,145,379,1,1,http://localhost:8000/api/exams/perf-test-exam,24,0,0
+1784733333474,6,POST /api/exams (create exam),200,OK,0 - Instructor  Exam Setup 1-1,text,true,,502,647,1,1,http://localhost:8000/api/exams,6,0,0
+1784733333481,14695,POST /api/exams/{session}/roster/csv (50 students),200,OK,0 - Instructor  Exam Setup 1-1,text,true,,760,3164,1,1,http://localhost:8000/api/exams/perf-test-exam/roster/csv,14695,0,0
+1784733348238,349,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-1,text,true,,415,235,4,4,http://localhost:8000/auth/login,349,0,2
+1784733348407,774,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-3,text,true,,415,235,10,10,http://localhost:8000/auth/login,774,0,1
+1784733348307,874,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-2,text,true,,415,235,10,10,http://localhost:8000/auth/login,874,0,3
+1784733348504,967,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-4,text,true,,415,235,13,13,http://localhost:8000/auth/login,967,0,2
+1784733348588,883,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-1,text,true,,143,473,13,13,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,883,0,0
+1784733349181,305,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-2,text,true,,143,473,13,13,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,305,0,0
+1784733349181,600,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-3,text,true,,143,473,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,600,0,0
+1784733349472,311,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-4,text,true,,143,473,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,311,0,0
+1784733348703,1080,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-6,text,true,,415,235,16,16,http://localhost:8000/auth/login,1080,0,1
+1784733348603,1769,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-5,text,true,,415,235,22,22,http://localhost:8000/auth/login,1769,0,1
+1784733348800,1873,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-7,text,true,,415,235,25,25,http://localhost:8000/auth/login,1873,0,1
+1784733348900,1774,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-8,text,true,,415,235,25,25,http://localhost:8000/auth/login,1774,0,1
+1784733348999,2284,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-9,text,true,,415,235,31,31,http://localhost:8000/auth/login,2284,0,0
+1784733349098,2185,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-10,text,true,,416,236,31,31,http://localhost:8000/auth/login,2185,0,0
+1784733349472,2129,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-1,text,true,,380,425,35,35,http://localhost:8000/api/exams/perf-test-exam/roster/700000001/identity,2129,0,0
+1784733349783,1819,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-6,text,true,,143,473,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1819,0,0
+1784733349195,2408,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-11,text,true,,416,236,34,34,http://localhost:8000/auth/login,2408,0,2
+1784733349293,2958,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-12,text,true,,416,236,40,40,http://localhost:8000/auth/login,2958,0,1
+1784733350373,1884,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-5,text,true,,143,473,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1884,0,0
+1784733349391,2866,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-13,text,true,,416,236,40,40,http://localhost:8000/auth/login,2866,0,1
+1784733350675,1904,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-7,text,true,,143,473,43,43,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1904,0,0
+1784733350675,1904,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-8,text,true,,143,473,43,43,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1904,0,0
+1784733349489,3090,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-14,text,true,,416,236,43,43,http://localhost:8000/auth/login,3090,0,1
+1784733349488,3398,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-2,text,true,,380,425,47,47,http://localhost:8000/api/exams/perf-test-exam/roster/700000002/identity,3398,0,0
+1784733349781,3109,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-3,text,true,,380,425,46,46,http://localhost:8000/api/exams/perf-test-exam/roster/700000003/identity,3109,0,0
+1784733349783,3107,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-4,text,true,,380,425,46,46,http://localhost:8000/api/exams/perf-test-exam/roster/700000004/identity,3107,0,0
+1784733349589,3302,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-15,text,true,,416,236,46,46,http://localhost:8000/auth/login,3301,0,1
+1784733351284,1911,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-9,text,true,,143,473,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1911,0,0
+1784733351284,1912,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-10,text,true,,143,474,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1911,0,0
+1784733349688,3514,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-16,text,true,,416,236,46,46,http://localhost:8000/auth/login,3514,0,1
+1784733351604,1898,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-11,text,true,,143,474,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1898,0,0
+1784733349788,3720,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-17,text,true,,416,236,46,46,http://localhost:8000/auth/login,3720,0,1
+1784733352252,1568,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-12,text,true,,143,474,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1568,0,0
+1784733349888,3932,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-18,text,true,,416,236,46,46,http://localhost:8000/auth/login,3932,0,1
+1784733352258,1864,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-13,text,true,,143,474,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1864,0,0
+1784733349990,4145,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-19,text,true,,416,236,46,46,http://localhost:8000/auth/login,4144,0,1
+1784733352580,1859,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-14,text,true,,143,474,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1859,0,0
+1784733351603,2846,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-6,text,true,,380,425,46,46,http://localhost:8000/api/exams/perf-test-exam/roster/700000006/identity,2846,0,0
+1784733350089,4360,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-20,text,true,,416,236,46,46,http://localhost:8000/auth/login,4360,0,1
+1784733352891,1862,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-15,text,true,,143,474,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1862,0,0
+1784733353202,1561,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-16,text,true,,143,474,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1561,0,0
+1784733350188,4575,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-21,text,true,,416,236,45,45,http://localhost:8000/auth/login,4575,0,1
+1784733350286,4789,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-22,text,true,,416,236,45,45,http://localhost:8000/auth/login,4789,0,1
+1784733352258,2817,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-5,text,true,,380,425,45,45,http://localhost:8000/api/exams/perf-test-exam/roster/700000005/identity,2817,0,0
+1784733353509,1570,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-17,text,true,,143,474,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1570,0,0
+1784733352580,3159,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-8,text,true,,380,425,44,44,http://localhost:8000/api/exams/perf-test-exam/roster/700000008/identity,3158,0,0
+1784733353820,1919,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-18,text,true,,143,474,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1919,0,0
+1784733352580,3160,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-7,text,true,,380,425,43,43,http://localhost:8000/api/exams/perf-test-exam/roster/700000007/identity,3160,0,0
+1784733350387,5353,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-23,text,true,,416,236,43,43,http://localhost:8000/auth/login,5353,0,1
+1784733353196,2554,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-9,text,true,,380,425,42,42,http://localhost:8000/api/exams/perf-test-exam/roster/700000009/identity,2554,0,0
+1784733353196,2554,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-10,text,true,,382,425,42,42,http://localhost:8000/api/exams/perf-test-exam/roster/700000010/identity,2554,0,0
+1784733350486,5264,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-24,text,true,,416,236,42,42,http://localhost:8000/auth/login,5264,0,1
+1784733354135,1934,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-19,text,true,,143,474,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1934,0,0
+1784733350585,5491,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-25,text,true,,416,236,40,40,http://localhost:8000/auth/login,5491,0,2
+1784733354450,1952,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-20,text,true,,143,474,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1952,0,0
+1784733353502,2900,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-11,text,true,,382,425,40,40,http://localhost:8000/api/exams/perf-test-exam/roster/700000011/identity,2900,0,0
+1784733350685,5723,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-26,text,true,,416,236,39,39,http://localhost:8000/auth/login,5723,0,1
+1784733354765,1971,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-21,text,true,,143,474,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1971,0,0
+1784733354123,2630,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-13,text,true,,382,425,39,39,http://localhost:8000/api/exams/perf-test-exam/roster/700000013/identity,2630,0,0
+1784733350787,5966,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-27,text,true,,416,236,39,39,http://localhost:8000/auth/login,5966,0,1
+1784733355076,2015,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-22,text,true,,143,474,38,38,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2015,0,0
+1784733353820,3279,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-12,text,true,,382,425,38,38,http://localhost:8000/api/exams/perf-test-exam/roster/700000012/identity,3278,0,0
+1784733350886,6213,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-28,text,true,,416,236,38,38,http://localhost:8000/auth/login,6213,0,1
+1784733355742,1675,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-23,text,true,,143,474,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1675,0,0
+1784733354440,2984,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-14,text,true,,382,425,37,37,http://localhost:8000/api/exams/perf-test-exam/roster/700000014/identity,2984,0,0
+1784733354754,2671,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-15,text,true,,382,425,36,36,http://localhost:8000/api/exams/perf-test-exam/roster/700000015/identity,2671,0,0
+1784733350991,6434,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-29,text,true,,416,236,36,36,http://localhost:8000/auth/login,6434,0,1
+1784733355751,2004,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-24,text,true,,143,474,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2004,0,0
+1784733354764,2997,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-16,text,true,,382,425,35,35,http://localhost:8000/api/exams/perf-test-exam/roster/700000016/identity,2997,0,0
+1784733356077,1685,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-25,text,true,,143,474,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1685,0,0
+1784733351095,6667,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-30,text,true,,416,236,35,35,http://localhost:8000/auth/login,6667,0,1
+1784733355080,3009,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-17,text,true,,382,425,34,34,http://localhost:8000/api/exams/perf-test-exam/roster/700000017/identity,3009,0,0
+1784733351188,7227,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-31,text,true,,416,236,33,33,http://localhost:8000/auth/login,7227,0,1
+1784733356409,2012,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-26,text,true,,143,474,33,33,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2012,0,0
+1784733355740,2682,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-18,text,true,,382,425,33,33,http://localhost:8000/api/exams/perf-test-exam/roster/700000018/identity,2682,0,0
+1784733351287,7136,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-32,text,true,,416,236,32,32,http://localhost:8000/auth/login,7136,0,2
+1784733356754,1987,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-27,text,true,,143,474,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1987,0,0
+1784733356069,2680,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-19,text,true,,382,425,32,32,http://localhost:8000/api/exams/perf-test-exam/roster/700000019/identity,2679,0,0
+1784733351387,7362,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-33,text,true,,416,236,32,32,http://localhost:8000/auth/login,7361,0,1
+1784733357100,1650,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-28,text,true,,143,474,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1649,0,0
+1784733356402,2679,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-20,text,true,,382,425,31,31,http://localhost:8000/api/exams/perf-test-exam/roster/700000020/identity,2679,0,0
+1784733351486,7595,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-34,text,true,,416,236,31,31,http://localhost:8000/auth/login,7595,0,1
+1784733357425,1981,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-29,text,true,,143,474,30,30,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1981,0,0
+1784733351588,7819,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-35,text,true,,416,236,30,30,http://localhost:8000/auth/login,7819,0,1
+1784733357763,1645,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-30,text,true,,143,474,30,30,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1645,0,0
+1784733356737,2991,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-21,text,true,,382,425,30,30,http://localhost:8000/api/exams/perf-test-exam/roster/700000021/identity,2991,0,0
+1784733358416,1316,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-31,text,true,,143,474,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1315,0,0
+1784733351687,8044,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-36,text,true,,416,236,29,29,http://localhost:8000/auth/login,8044,0,1
+1784733357092,2975,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-22,text,true,,382,425,29,29,http://localhost:8000/api/exams/perf-test-exam/roster/700000022/identity,2975,0,0
+1784733351790,8603,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-37,text,true,,416,236,28,28,http://localhost:8000/auth/login,8602,0,1
+1784733358424,1977,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-32,text,true,,143,474,28,28,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1977,0,0
+1784733357418,2984,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-23,text,true,,382,425,28,28,http://localhost:8000/api/exams/perf-test-exam/roster/700000023/identity,2984,0,0
+1784733351894,8508,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-38,text,true,,416,236,28,28,http://localhost:8000/auth/login,8508,0,2
+1784733358749,2006,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-33,text,true,,143,474,27,27,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2006,0,0
+1784733357755,3001,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-24,text,true,,382,425,27,27,http://localhost:8000/api/exams/perf-test-exam/roster/700000024/identity,3000,0,0
+1784733351990,8766,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-39,text,true,,416,236,27,27,http://localhost:8000/auth/login,8766,0,1
+1784733359082,1675,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-34,text,true,,143,474,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1675,0,0
+1784733357763,3361,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-25,text,true,,382,425,26,26,http://localhost:8000/api/exams/perf-test-exam/roster/700000025/identity,3361,0,0
+1784733352088,9036,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-40,text,true,,416,236,26,26,http://localhost:8000/auth/login,9036,0,1
+1784733359408,2060,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-35,text,true,,143,474,25,25,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2060,0,0
+1784733358422,3428,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-26,text,true,,382,425,25,25,http://localhost:8000/api/exams/perf-test-exam/roster/700000026/identity,3428,0,0
+1784733352188,9662,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-41,text,true,,416,236,25,25,http://localhost:8000/auth/login,9662,0,1
+1784733359732,2126,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-36,text,true,,143,474,24,24,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2126,0,0
+1784733358742,3116,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-27,text,true,,382,425,24,24,http://localhost:8000/api/exams/perf-test-exam/roster/700000027/identity,3116,0,0
+1784733352286,9572,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-42,text,true,,416,236,24,24,http://localhost:8000/auth/login,9572,0,1
+1784733360393,1819,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-37,text,true,,143,474,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1819,0,0
+1784733358750,3463,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-28,text,true,,382,425,23,23,http://localhost:8000/api/exams/perf-test-exam/roster/700000028/identity,3462,0,0
+1784733352385,9828,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-43,text,true,,416,236,23,23,http://localhost:8000/auth/login,9828,0,1
+1784733360403,2156,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-38,text,true,,143,474,22,22,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2156,0,0
+1784733359407,3162,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-29,text,true,,382,425,22,22,http://localhost:8000/api/exams/perf-test-exam/roster/700000029/identity,3162,0,0
+1784733352485,10084,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-44,text,true,,416,236,22,22,http://localhost:8000/auth/login,10084,0,1
+1784733359409,3161,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-30,text,true,,382,425,21,21,http://localhost:8000/api/exams/perf-test-exam/roster/700000030/identity,3161,0,0
+1784733360757,1814,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-39,text,true,,143,474,21,21,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1814,0,0
+1784733352586,10704,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-45,text,true,,416,236,20,20,http://localhost:8000/auth/login,10704,0,1
+1784733359732,3558,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-31,text,true,,382,425,20,20,http://localhost:8000/api/exams/perf-test-exam/roster/700000031/identity,3558,0,0
+1784733361125,2176,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-40,text,true,,143,474,19,19,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2176,0,0
+1784733352685,10617,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-46,text,true,,416,236,19,19,http://localhost:8000/auth/login,10617,0,2
+1784733361851,1842,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-41,text,true,,143,474,19,19,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1842,0,0
+1784733352786,10908,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-47,text,true,,416,236,19,19,http://localhost:8000/auth/login,10908,0,1
+1784733360402,3675,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-32,text,true,,382,425,19,19,http://localhost:8000/api/exams/perf-test-exam/roster/700000032/identity,3675,0,0
+1784733361859,2228,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-42,text,true,,143,474,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2228,0,0
+1784733360758,3329,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-34,text,true,,382,425,18,18,http://localhost:8000/api/exams/perf-test-exam/roster/700000034/identity,3329,0,0
+1784733360755,3332,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-33,text,true,,382,425,18,18,http://localhost:8000/api/exams/perf-test-exam/roster/700000033/identity,3332,0,0
+1784733362215,1873,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-43,text,true,,143,474,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1872,0,0
+1784733352886,11201,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-48,text,true,,416,236,18,18,http://localhost:8000/auth/login,11201,0,1
+1784733352992,11833,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-49,text,true,,416,236,16,16,http://localhost:8000/auth/login,11832,0,1
+1784733362570,2255,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-44,text,true,,143,474,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,2254,0,0
+1784733353092,11736,POST /auth/login (student),200,OK,1 - Identity Approval Setup (50 students) 2-50,text,true,,416,236,16,16,http://localhost:8000/auth/login,11736,0,1
+1784733361469,3363,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-35,text,true,,382,425,16,16,http://localhost:8000/api/exams/perf-test-exam/roster/700000035/identity,3363,0,0
+1784733363291,1550,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-45,text,true,,143,474,15,15,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1550,0,0
+1784733361859,2982,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-36,text,true,,382,425,15,15,http://localhost:8000/api/exams/perf-test-exam/roster/700000036/identity,2982,0,0
+1784733363303,1549,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-46,text,true,,143,474,14,14,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1549,0,0
+1784733362214,2638,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-37,text,true,,382,425,14,14,http://localhost:8000/api/exams/perf-test-exam/roster/700000037/identity,2638,0,0
+1784733363695,1164,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-47,text,true,,143,474,13,13,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,1164,0,0
+1784733362560,2302,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-38,text,true,,382,425,13,13,http://localhost:8000/api/exams/perf-test-exam/roster/700000038/identity,2302,0,0
+1784733362572,2302,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-39,text,true,,382,425,12,12,http://localhost:8000/api/exams/perf-test-exam/roster/700000039/identity,2302,0,0
+1784733364088,787,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-48,text,true,,143,474,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,787,0,0
+1784733364825,59,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-49,text,true,,143,474,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,58,0,0
+1784733364830,61,POST /attempt/id-photo,200,OK,1 - Identity Approval Setup (50 students) 2-50,text,true,,143,474,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/id-photo,61,0,0
+1784733363302,1590,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-40,text,true,,382,425,11,11,http://localhost:8000/api/exams/perf-test-exam/roster/700000040/identity,1590,0,0
+1784733363695,1209,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-41,text,true,,382,425,10,10,http://localhost:8000/api/exams/perf-test-exam/roster/700000041/identity,1209,0,0
+1784733364088,819,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-43,text,true,,382,425,9,9,http://localhost:8000/api/exams/perf-test-exam/roster/700000043/identity,818,0,0
+1784733364088,820,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-42,text,true,,382,425,8,8,http://localhost:8000/api/exams/perf-test-exam/roster/700000042/identity,820,0,0
+1784733364825,92,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-44,text,true,,382,425,7,7,http://localhost:8000/api/exams/perf-test-exam/roster/700000044/identity,92,0,0
+1784733364853,72,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-46,text,true,,382,425,6,6,http://localhost:8000/api/exams/perf-test-exam/roster/700000046/identity,72,0,0
+1784733364842,83,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-45,text,true,,382,425,6,6,http://localhost:8000/api/exams/perf-test-exam/roster/700000045/identity,82,0,0
+1784733364876,54,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-48,text,true,,382,425,4,4,http://localhost:8000/api/exams/perf-test-exam/roster/700000048/identity,54,0,0
+1784733364861,70,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-47,text,true,,382,425,4,4,http://localhost:8000/api/exams/perf-test-exam/roster/700000047/identity,70,0,0
+1784733364885,48,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-49,text,true,,382,425,2,2,http://localhost:8000/api/exams/perf-test-exam/roster/700000049/identity,48,0,0
+1784733364892,43,POST /roster/{id}/identity (approve),200,OK,1 - Identity Approval Setup (50 students) 2-50,text,true,,382,425,2,2,http://localhost:8000/api/exams/perf-test-exam/roster/700000050/identity,43,0,0
+1784733365040,614,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,415,272,4,4,http://localhost:8000/auth/login,613,0,7
+1784733365224,842,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,415,272,6,6,http://localhost:8000/auth/login,842,0,1
+1784733365458,1465,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,415,272,10,10,http://localhost:8000/auth/login,1465,0,16
+1784733365639,1285,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,415,272,10,10,http://localhost:8000/auth/login,1285,0,2
+1784733365657,1274,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,593,396,10,10,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000001,1274,0,0
+1784733365826,1500,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,415,272,12,12,http://localhost:8000/auth/login,1500,0,2
+1784733366027,2061,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,415,272,16,16,http://localhost:8000/auth/login,2061,0,1
+1784733366067,2023,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,593,396,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000002,2023,0,0
+1784733366224,1866,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,415,272,16,16,http://localhost:8000/auth/login,1866,0,1
+1784733366924,1522,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,593,396,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000003,1522,0,0
+1784733366925,1521,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,593,396,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000004,1521,0,0
+1784733366423,2023,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,415,272,18,18,http://localhost:8000/auth/login,2023,0,1
+1784733366622,2183,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,415,272,19,19,http://localhost:8000/auth/login,2183,0,2
+1784733366824,2710,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,416,273,23,23,http://localhost:8000/auth/login,2710,0,2
+1784733367022,2518,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,416,273,23,23,http://localhost:8000/auth/login,2518,0,1
+1784733367222,2678,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,416,273,25,25,http://localhost:8000/auth/login,2678,0,1
+1784733367327,2934,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,593,396,27,27,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000005,2934,0,0
+1784733366932,3330,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,174,428,27,27,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3329,0,0
+1784733367423,2847,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,416,273,27,27,http://localhost:8000/auth/login,2847,0,1
+1784733368089,2528,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,593,396,28,28,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000006,2528,0,0
+1784733367623,2994,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,416,273,28,28,http://localhost:8000/auth/login,2994,0,1
+1784733368091,2528,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,593,396,28,28,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000007,2528,0,0
+1784733368447,2912,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,593,396,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000008,2912,0,0
+1784733367823,3536,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,416,273,32,32,http://localhost:8000/auth/login,3536,0,1
+1784733368022,3346,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,416,273,32,32,http://localhost:8000/auth/login,3345,0,1
+1784733368806,2914,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,593,396,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000009,2914,0,0
+1784733369535,2196,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,593,397,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000010,2196,0,0
+1784733368447,3284,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,174,428,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3284,0,0
+1784733368090,3641,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,174,428,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3641,0,0
+1784733368222,3509,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,416,273,34,34,http://localhost:8000/auth/login,3509,0,0
+1784733368447,3696,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,174,428,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3695,0,0
+1784733368421,3722,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,416,273,36,36,http://localhost:8000/auth/login,3722,0,1
+1784733369541,2602,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,593,397,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000011,2602,0,0
+1784733368627,3877,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,416,273,38,38,http://localhost:8000/auth/login,3877,0,1
+1784733370262,2630,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,143,493,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2630,0,0
+1784733369901,2991,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,593,397,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000012,2991,0,0
+1784733370271,2621,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,593,397,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000013,2621,0,0
+1784733368829,4412,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,416,273,42,42,http://localhost:8000/auth/login,4412,0,3
+1784733369024,4229,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,416,273,42,42,http://localhost:8000/auth/login,4229,0,2
+1784733370618,2985,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,593,397,43,43,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000014,2985,0,0
+1784733370262,3341,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,174,428,43,43,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3341,0,0
+1784733371361,2250,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,593,397,43,43,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000015,2250,0,0
+1784733369224,4387,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,416,273,43,43,http://localhost:8000/auth/login,4387,0,1
+1784733370617,3603,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,174,428,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3603,0,0
+1784733369423,4797,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,416,273,46,46,http://localhost:8000/auth/login,4797,0,1
+1784733371368,3224,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,593,397,48,48,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000016,3224,0,0
+1784733371359,3233,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,174,428,48,48,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3233,0,0
+1784733370619,3973,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,174,428,48,48,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3973,0,0
+1784733371732,3222,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3222,0,0
+1784733371732,3223,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000017,3223,0,0
+1784733371732,3224,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3224,0,0
+1784733369622,5334,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,416,273,50,50,http://localhost:8000/auth/login,5334,0,1
+1784733372143,2822,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000018,2822,0,0
+1784733371720,3246,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,174,428,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3246,0,0
+1784733369822,5144,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,416,273,50,50,http://localhost:8000/auth/login,5144,0,1
+1784733372143,3200,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3200,0,0
+1784733370023,5335,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,416,273,50,50,http://localhost:8000/auth/login,5335,0,1
+1784733372505,3224,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000019,3224,0,0
+1784733371732,4000,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,4000,0,0
+1784733372144,3609,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3609,0,0
+1784733372892,2861,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2861,0,0
+1784733370222,5531,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,416,273,50,50,http://localhost:8000/auth/login,5531,0,0
+1784733373241,2881,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000020,2881,0,0
+1784733370433,5692,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,416,273,50,50,http://localhost:8000/auth/login,5691,0,1
+1784733373254,3223,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000021,3223,0,0
+1784733372892,3600,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3600,0,0
+1784733372892,3600,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3600,0,0
+1784733373604,2888,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2888,0,0
+1784733370637,5857,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,416,273,50,50,http://localhost:8000/auth/login,5857,0,1
+1784733373612,3256,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000022,3256,0,0
+1784733370831,6442,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,416,273,50,50,http://localhost:8000/auth/login,6442,0,1
+1784733373604,3669,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3669,0,0
+1784733374220,3053,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3053,0,0
+1784733374221,3064,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000023,3064,0,0
+1784733374593,2692,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2692,0,0
+1784733374956,2329,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2329,0,0
+1784733374593,2692,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2692,0,0
+1784733374957,2328,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000024,2328,0,0
+1784733371034,6251,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,416,273,50,50,http://localhost:8000/auth/login,6251,0,1
+1784733374954,2332,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2332,0,0
+1784733373612,4033,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,4033,0,0
+1784733374967,2678,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000025,2678,0,0
+1784733371232,6413,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,416,273,50,50,http://localhost:8000/auth/login,6413,0,2
+1784733374967,3062,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3062,0,0
+1784733374593,3450,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3450,0,0
+1784733375345,2698,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2698,0,0
+1784733374955,3088,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3088,0,0
+1784733375359,2684,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000026,2684,0,0
+1784733371428,6615,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,416,273,50,50,http://localhost:8000/auth/login,6615,0,1
+1784733375733,2661,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2661,0,0
+1784733374966,3455,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3455,0,0
+1784733375754,2667,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2667,0,0
+1784733375754,2667,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,143,495,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2667,0,0
+1784733375754,2667,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000027,2667,0,0
+1784733371627,6794,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,416,273,50,50,http://localhost:8000/auth/login,6794,0,1
+1784733371829,6980,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,416,273,50,50,http://localhost:8000/auth/login,6979,0,2
+1784733375730,3439,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3439,0,0
+1784733376126,3043,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000028,3043,0,0
+1784733376493,2707,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2707,0,0
+1784733376493,2707,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2707,0,0
+1784733376495,2705,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000029,2705,0,0
+1784733372028,7172,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,416,273,50,50,http://localhost:8000/auth/login,7172,0,2
+1784733376493,3085,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3085,0,0
+1784733372226,7373,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,416,273,50,50,http://localhost:8000/auth/login,7373,0,1
+1784733376123,3477,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3477,0,0
+1784733377273,2682,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2682,0,0
+1784733377273,2683,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000030,2683,0,0
+1784733376477,3479,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3478,0,0
+1784733377273,2683,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2683,0,0
+1784733377287,2684,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,143,495,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2684,0,0
+1784733372427,7544,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,416,273,50,50,http://localhost:8000/auth/login,7544,0,2
+1784733377286,2685,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2685,0,0
+1784733377286,2685,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,143,495,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2685,0,0
+1784733377286,2685,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000031,2685,0,0
+1784733377286,2685,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2685,0,0
+1784733377646,2706,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2706,0,0
+1784733372625,8073,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,416,273,50,50,http://localhost:8000/auth/login,8073,0,1
+1784733376869,3831,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3831,0,0
+1784733378030,2670,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,143,493,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2670,0,0
+1784733377646,3055,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000032,3055,0,0
+1784733377286,3429,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3429,0,0
+1784733378043,2673,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2672,0,0
+1784733377286,3429,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3429,0,0
+1784733378043,2674,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,143,495,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2674,0,0
+1784733372824,7894,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,416,273,50,50,http://localhost:8000/auth/login,7894,0,1
+1784733378044,3023,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,593,397,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000033,3023,0,0
+1784733378394,2673,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2673,0,0
+1784733378043,3024,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3024,0,0
+1784733377646,3442,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,174,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3442,0,0
+1784733378422,2666,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-1,text,true,,176,429,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2666,0,0
+1784733378422,2666,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,143,494,50,50,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2666,0,0
+1784733373022,8066,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,416,273,50,50,http://localhost:8000/auth/login,8066,0,1
+1784733378422,2995,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2995,0,0
+1784733378422,2995,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,593,397,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000034,2995,0,0
+1784733378043,3386,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,174,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3386,0,0
+1784733373223,8208,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,416,273,49,49,http://localhost:8000/auth/login,8208,0,1
+1784733378809,2961,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,593,397,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000035,2961,0,0
+1784733379170,2600,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2600,0,0
+1784733378422,3376,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,174,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3376,0,0
+1784733379201,2598,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,143,495,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2598,0,0
+1784733379579,2220,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2220,0,0
+1784733373423,8376,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,416,273,49,49,http://localhost:8000/auth/login,8376,0,1
+1784733379202,2598,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,593,397,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000036,2598,0,0
+1784733379201,2977,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2976,0,0
+1784733373622,8579,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,416,273,49,49,http://localhost:8000/auth/login,8578,0,1
+1784733379600,3017,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,593,397,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000037,3017,0,0
+1784733379170,3448,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,174,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3448,0,0
+1784733379600,3037,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3037,0,0
+1784733379956,2681,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2681,0,0
+1784733379957,2680,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,143,494,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2680,0,0
+1784733379956,2682,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,143,495,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2681,0,0
+1784733379972,2667,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,593,397,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000038,2666,0,0
+1784733379972,2667,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,143,495,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2667,0,0
+1784733379201,3438,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,174,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3438,0,0
+1784733379972,2668,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,143,495,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2668,0,0
+1784733373838,8801,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,416,273,49,49,http://localhost:8000/auth/login,8801,0,2
+1784733379972,2669,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-3,text,true,,176,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2668,0,0
+1784733379972,2669,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-2,text,true,,176,429,49,49,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2669,0,0
+1784733380701,2395,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,143,494,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2395,0,0
+1784733380353,2743,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,143,494,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2743,0,0
+1784733374022,9074,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,416,273,47,47,http://localhost:8000/auth/login,9074,0,2
+1784733380699,2402,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,593,397,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000039,2402,0,0
+1784733380701,2400,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,143,495,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2400,0,0
+1784733379972,3475,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,174,429,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3475,0,0
+1784733379956,3491,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,174,429,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3491,0,0
+1784733380716,2733,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,143,494,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2733,0,0
+1784733380716,2734,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,143,494,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2734,0,0
+1784733381067,2383,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,143,496,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2383,0,0
+1784733380716,2735,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,143,494,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2735,0,0
+1784733374222,9229,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,416,273,47,47,http://localhost:8000/auth/login,9229,0,2
+1784733380717,2737,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-4,text,true,,176,429,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2737,0,0
+1784733380719,2736,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,593,397,47,47,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000040,2736,0,0
+1784733381067,2752,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2752,0,0
+1784733381088,3095,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3095,0,0
+1784733380701,3484,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,174,429,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3484,0,0
+1784733381089,3096,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,593,397,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000041,3096,0,0
+1784733381088,3097,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,143,496,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3097,0,0
+1784733374423,9762,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,416,273,46,46,http://localhost:8000/auth/login,9762,0,1
+1784733381417,2770,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2770,0,0
+1784733374621,9600,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,416,273,46,46,http://localhost:8000/auth/login,9600,0,1
+1784733381432,3251,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,593,397,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000042,3251,0,0
+1784733381067,3616,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,174,429,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3616,0,0
+1784733381430,3255,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,3255,0,0
+1784733381417,3293,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,174,429,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/start,3293,0,0
+1784733381800,2910,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,593,397,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000043,2910,0,0
+1784733381799,2911,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2911,0,0
+1784733381770,2940,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,143,494,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2940,0,0
+1784733374820,9890,POST /auth/login (student),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,416,273,46,46,http://localhost:8000/auth/login,9890,0,1
+1784733381799,2911,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-5,text,true,,176,429,46,46,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2911,0,0
+1784733382178,2534,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,143,496,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2534,0,0
+1784733381799,2914,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,143,496,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2914,0,0
+1784733382202,2536,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,593,397,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000044,2536,0,0
+1784733381770,2982,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,174,429,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/start,2982,0,0
+1784733382618,2134,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,143,494,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2134,0,0
+1784733382637,2137,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,143,494,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2137,0,0
+1784733382638,2137,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,143,496,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2137,0,0
+1784733382638,2137,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-6,text,true,,176,429,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2137,0,0
+1784733382640,2135,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,143,494,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2135,0,0
+1784733381800,2976,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,174,429,45,45,http://localhost:8000/api/exams/perf-test-exam/attempt/start,2976,0,0
+1784733382637,2139,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,143,494,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,2139,0,0
+1784733382641,2141,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,593,397,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000045,2141,0,0
+1784733382640,2142,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-7,text,true,,176,429,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2142,0,0
+1784733382641,2141,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-8,text,true,,176,429,44,44,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,2141,0,0
+1784733383096,1713,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,143,494,42,42,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1713,0,0
+1784733383096,1714,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,143,496,42,42,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1714,0,0
+1784733382617,2193,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,174,429,42,42,http://localhost:8000/api/exams/perf-test-exam/attempt/start,2193,0,0
+1784733383096,1720,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,593,397,42,42,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000046,1720,0,0
+1784733383102,1733,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-9,text,true,,176,429,42,42,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,1733,0,0
+1784733383448,1389,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,143,494,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1389,0,0
+1784733383448,1390,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,143,494,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1390,0,0
+1784733382639,2199,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,174,429,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/start,2199,0,0
+1784733383451,1388,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,143,494,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1388,0,0
+1784733383450,1391,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,143,496,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1391,0,0
+1784733383450,1391,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,143,494,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1391,0,0
+1784733383450,1391,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-10,text,true,,176,430,41,41,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,1391,0,0
+1784733383452,1412,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,593,397,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000047,1412,0,0
+1784733383101,1770,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,174,429,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/start,1770,0,0
+1784733383820,1068,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,143,496,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,1068,0,0
+1784733384184,704,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,143,494,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,704,0,0
+1784733384186,703,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-11,text,true,,176,430,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,703,0,0
+1784733384186,704,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,143,494,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,704,0,0
+1784733384186,704,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,593,397,40,40,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000048,704,0,0
+1784733384187,706,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,143,496,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,706,0,0
+1784733384684,241,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,143,494,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,241,0,0
+1784733383455,1471,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,174,429,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/start,1471,0,0
+1784733384222,704,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,593,397,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000049,704,0,0
+1784733384686,240,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,143,494,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,240,0,0
+1784733384711,216,GET /attempt,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,593,397,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt?student_id=700000050,216,0,0
+1784733384713,214,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-12,text,true,,176,430,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,214,0,0
+1784733384711,216,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,143,496,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,216,0,0
+1784733384713,215,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-13,text,true,,176,430,39,39,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,214,0,0
+1784733384713,216,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,216,0,0
+1784733384711,219,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,219,0,0
+1784733384186,755,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,174,429,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/start,755,0,0
+1784733384753,220,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,220,0,0
+1784733384684,289,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,174,429,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/start,289,0,0
+1784733384753,220,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,220,0,0
+1784733384775,198,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,143,496,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,198,0,0
+1784733384711,262,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,174,429,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/start,262,0,0
+1784733384776,197,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-14,text,true,,176,430,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,197,0,0
+1784733384776,198,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,143,496,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,198,0,0
+1784733384776,198,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,198,0,0
+1784733384776,197,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,143,494,37,37,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,197,0,0
+1784733384739,282,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,174,429,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/start,282,0,0
+1784733384811,210,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-15,text,true,,176,430,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,210,0,0
+1784733384837,184,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,143,494,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,184,0,0
+1784733384783,238,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,174,429,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/start,238,0,0
+1784733384812,209,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,143,494,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,209,0,0
+1784733384810,211,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,143,496,36,36,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,211,0,0
+1784733384838,185,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,143,494,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,185,0,0
+1784733384840,183,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,143,496,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,183,0,0
+1784733384842,181,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-17,text,true,,176,430,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,181,0,0
+1784733384838,186,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,143,494,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,186,0,0
+1784733384842,183,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,143,496,35,35,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,183,0,0
+1784733384872,182,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,143,494,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,182,0,0
+1784733384817,238,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,174,429,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt/start,238,0,0
+1784733384889,166,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-16,text,true,,176,430,34,34,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,166,0,0
+1784733384893,164,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-18,text,true,,176,430,33,33,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,164,0,0
+1784733384890,167,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,143,494,33,33,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,167,0,0
+1784733384889,198,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,143,496,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,198,0,0
+1784733384926,162,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,143,496,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,162,0,0
+1784733384865,223,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,174,429,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/start,223,0,0
+1784733384928,160,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-19,text,true,,176,430,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,160,0,0
+1784733384926,162,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,143,494,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,162,0,0
+1784733384926,162,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,143,494,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,162,0,0
+1784733384931,157,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,143,494,32,32,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,157,0,0
+1784733384931,159,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,143,496,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,159,0,0
+1784733384890,202,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,174,429,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/start,202,0,0
+1784733384942,176,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,143,494,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,176,0,0
+1784733384974,144,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-20,text,true,,176,430,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,144,0,0
+1784733384926,192,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,174,429,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/start,192,0,0
+1784733384928,190,POST /attempt/start,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,174,429,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/start,190,0,0
+1784733384974,144,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-21,text,true,,176,430,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,144,0,0
+1784733384974,144,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,143,494,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,144,0,0
+1784733384974,145,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,143,496,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,145,0,0
+1784733384974,145,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,143,494,31,31,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,145,0,0
+1784733384974,145,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,145,0,0
+1784733384975,160,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,143,496,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,160,0,0
+1784733384974,161,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,161,0,0
+1784733385022,129,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385022,129,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385022,129,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,143,496,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385022,129,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385022,129,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-22,text,true,,176,430,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,129,0,0
+1784733385023,129,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,143,494,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385025,127,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,143,496,29,29,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,127,0,0
+1784733385024,128,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-23,text,true,,176,430,28,28,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,128,0,0
+1784733385025,128,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-24,text,true,,176,430,28,28,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,127,0,0
+1784733385054,129,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,143,494,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,129,0,0
+1784733385055,128,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,143,494,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,128,0,0
+1784733385057,126,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,143,496,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,126,0,0
+1784733385088,120,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,143,494,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385087,121,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-25,text,true,,176,430,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,121,0,0
+1784733385088,120,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-26,text,true,,176,430,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,120,0,0
+1784733385088,120,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,143,496,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385088,120,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,143,494,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385088,120,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,143,496,26,26,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385090,124,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-27,text,true,,176,430,24,24,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,124,0,0
+1784733385092,133,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,143,494,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,133,0,0
+1784733385118,119,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,143,494,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,119,0,0
+1784733385119,119,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,143,494,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,119,0,0
+1784733385119,119,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,143,496,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,119,0,0
+1784733385120,119,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,143,496,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,119,0,0
+1784733385119,120,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-28,text,true,,176,430,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,120,0,0
+1784733385119,120,POST /attempt/answers (q1),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,143,494,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385119,120,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,143,494,23,23,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,120,0,0
+1784733385135,126,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,143,494,22,22,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,126,0,0
+1784733385135,129,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-29,text,true,,176,430,22,22,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,129,0,0
+1784733385152,124,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,143,494,21,21,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,124,0,0
+1784733385152,125,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,143,494,21,21,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,125,0,0
+1784733385152,125,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-30,text,true,,176,430,21,21,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,125,0,0
+1784733385152,125,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,143,496,21,21,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,124,0,0
+1784733385152,128,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,143,496,20,20,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,128,0,0
+1784733385152,155,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-31,text,true,,176,430,20,20,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,154,0,0
+1784733385183,147,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,143,496,19,19,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,147,0,0
+1784733385183,148,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,143,494,19,19,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,148,0,0
+1784733385184,167,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-32,text,true,,176,430,19,19,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,167,0,0
+1784733385208,163,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,143,494,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,163,0,0
+1784733385208,163,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-34,text,true,,176,430,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,163,0,0
+1784733385208,163,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-33,text,true,,176,430,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,163,0,0
+1784733385225,147,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,143,494,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,147,0,0
+1784733385208,164,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,143,496,18,18,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,164,0,0
+1784733385238,165,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,143,494,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,165,0,0
+1784733385238,165,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,143,496,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,165,0,0
+1784733385239,164,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-36,text,true,,176,430,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,164,0,0
+1784733385239,165,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-35,text,true,,176,430,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,165,0,0
+1784733385239,165,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,143,496,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,165,0,0
+1784733385262,142,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,143,496,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,142,0,0
+1784733385239,165,POST /attempt/answers (q2),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,143,494,16,16,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,165,0,0
+1784733385277,153,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,143,496,14,14,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,153,0,0
+1784733385279,151,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-38,text,true,,176,430,14,14,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,151,0,0
+1784733385277,153,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,143,496,14,14,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,153,0,0
+1784733385281,150,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-37,text,true,,176,430,14,14,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,150,0,0
+1784733385331,119,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-39,text,true,,176,430,12,12,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,119,0,0
+1784733385331,125,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,143,496,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,125,0,0
+1784733385372,103,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-40,text,true,,176,430,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,103,0,0
+1784733385372,103,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,143,496,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,103,0,0
+1784733385372,104,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,143,496,11,11,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,104,0,0
+1784733385404,86,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,143,496,10,10,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,86,0,0
+1784733385404,87,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-41,text,true,,176,430,10,10,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,87,0,0
+1784733385404,91,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-42,text,true,,176,430,9,9,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,91,0,0
+1784733385405,91,POST /attempt/answers (q3),200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,143,496,9,9,http://localhost:8000/api/exams/perf-test-exam/attempt/answers,91,0,0
+1784733385405,91,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-43,text,true,,176,430,9,9,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,91,0,0
+1784733385431,78,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-45,text,true,,176,430,7,7,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,78,0,0
+1784733385431,78,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-44,text,true,,176,430,7,7,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,78,0,0
+1784733385456,60,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-46,text,true,,176,430,5,5,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,60,0,0
+1784733385476,46,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-47,text,true,,176,430,4,4,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,46,0,0
+1784733385476,46,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-48,text,true,,176,430,4,4,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,46,0,0
+1784733385491,32,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-49,text,true,,176,430,2,2,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,32,0,0
+1784733385496,27,POST /attempt/submit,200,OK,A - Exam Attempt Burst (50 concurrent students) 1-50,text,true,,176,430,2,2,http://localhost:8000/api/exams/perf-test-exam/attempt/submit,27,0,0
+1784733388531,138,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,138,0,3
+1784733388728,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,2
+1784733388928,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,2
+1784733389128,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,81,0,1
+1784733389329,81,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,81,0,2
+1784733389529,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,1
+1784733389729,81,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,81,0,1
+1784733389928,84,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,84,0,2
+1784733390130,91,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,90,0,1
+1784733390327,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,2
+1784733391670,106,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,106,0,0
+1784733391809,117,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,117,0,0
+1784733392009,93,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,93,0,0
+1784733392211,91,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,91,0,0
+1784733392411,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733392606,114,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,114,0,0
+1784733392811,108,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,108,0,0
+1784733393014,97,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,97,0,0
+1784733393221,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,88,0,0
+1784733393407,86,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,86,0,0
+1784733394777,156,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,156,0,0
+1784733394927,133,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,133,0,0
+1784733395104,140,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,140,0,0
+1784733395303,99,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,99,0,0
+1784733395497,129,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,129,0,0
+1784733395721,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733395920,103,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,103,0,0
+1784733396114,123,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,123,0,0
+1784733396311,142,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,142,0,0
+1784733396494,80,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,80,0,0
+1784733397933,139,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,139,0,0
+1784733398061,100,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,100,0,0
+1784733398245,97,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,96,0,0
+1784733398404,120,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,120,0,0
+1784733398627,90,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,90,0,0
+1784733398804,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733399023,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,87,0,0
+1784733399239,85,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,85,0,0
+1784733399454,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733399575,89,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,89,0,0
+1784733401074,84,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,84,0,0
+1784733401162,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733401342,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733401524,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733401719,88,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,88,0,0
+1784733401889,81,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,81,0,0
+1784733402111,78,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,78,0,0
+1784733402326,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733402537,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733402665,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,0
+1784733404158,85,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,85,0,0
+1784733404244,90,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,90,0,0
+1784733404420,104,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,104,0,0
+1784733404600,142,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,142,0,0
+1784733404808,120,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,120,0,0
+1784733404971,97,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,97,0,0
+1784733405190,82,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,82,0,0
+1784733405403,90,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,90,0,0
+1784733405609,112,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,112,0,0
+1784733405745,103,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,103,0,0
+1784733407244,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733407336,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733407525,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733407743,89,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,89,0,0
+1784733407930,95,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,95,0,0
+1784733408069,96,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,96,0,0
+1784733408272,92,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,91,0,0
+1784733408495,96,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,96,0,0
+1784733408721,91,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,91,0,0
+1784733408849,93,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,93,0,0
+1784733410319,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733410413,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,88,0,0
+1784733410600,91,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,91,0,0
+1784733410834,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733411026,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733411167,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733411364,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733411592,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733411813,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733411943,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733413398,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733413502,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733413692,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733413918,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733414106,85,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,85,0,0
+1784733414248,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733414443,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733414677,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733414895,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733415027,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733416474,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733416573,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733416764,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733416993,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733417193,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733417319,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733417520,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733417750,82,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,82,0,0
+1784733417972,82,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,82,0,0
+1784733418097,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733419558,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733419662,211,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,210,0,0
+1784733419841,108,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,108,0,0
+1784733420075,86,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,86,0,0
+1784733420278,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733420400,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733420599,80,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,80,0,0
+1784733420833,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733421055,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733421177,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733422633,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733422873,82,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,82,0,0
+1784733422950,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,88,0,0
+1784733423163,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733423354,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733423478,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733423680,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733423908,82,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,82,0,0
+1784733424128,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733424260,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733425714,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733425957,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,0
+1784733426038,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733426247,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733426436,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733426558,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733426761,99,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,99,0,0
+1784733426992,96,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,96,0,0
+1784733427209,80,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,80,0,0
+1784733427342,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733428787,103,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,103,0,0
+1784733429037,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733429113,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733429324,86,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,86,0,0
+1784733429510,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733429628,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733429862,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733430089,93,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,93,0,0
+1784733430290,105,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,105,0,0
+1784733430420,85,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,85,0,0
+1784733431891,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733432116,112,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,112,0,0
+1784733432194,99,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,99,0,0
+1784733432410,98,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,98,0,0
+1784733432589,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,78,0,0
+1784733432711,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733432941,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733433182,99,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,99,0,0
+1784733433396,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733433507,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733434964,86,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,86,0,0
+1784733435229,92,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,92,0,0
+1784733435293,94,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,94,0,0
+1784733435509,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733435668,75,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,75,0,0
+1784733435794,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733436016,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733436282,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733436466,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733436582,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733438051,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733438322,83,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,83,0,0
+1784733438387,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733438592,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733438744,67,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,67,0,0
+1784733438876,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733439100,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733439363,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733439545,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733439662,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733441127,98,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,98,0,0
+1784733441407,85,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,85,0,0
+1784733441462,95,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,95,0,0
+1784733441663,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733441811,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733441953,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733442170,90,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,90,0,0
+1784733442437,75,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,75,0,0
+1784733442622,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733442731,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733444226,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733444493,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,0
+1784733444559,88,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,88,0,0
+1784733444740,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733444892,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733445039,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733445261,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733445513,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733445705,90,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,90,0,0
+1784733445810,93,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,93,0,0
+1784733447296,87,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,87,0,0
+1784733447573,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733447649,86,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,86,0,0
+1784733447813,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733447964,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733448108,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733448336,73,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733448588,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733448795,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733448904,71,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,71,0,0
+1784733450383,88,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,88,0,2
+1784733450657,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,2
+1784733450736,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,1
+1784733450893,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,2
+1784733451046,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,1
+1784733451188,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,1
+1784733451410,87,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,87,0,2
+1784733451666,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,1
+1784733451878,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,1
+1784733451975,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,2
+1784733453472,102,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,102,0,0
+1784733453733,94,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,94,0,0
+1784733453808,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,88,0,0
+1784733453964,93,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,93,0,0
+1784733454118,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733454261,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733454497,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733454738,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733454950,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733455054,73,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733456575,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733456828,85,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,85,0,0
+1784733456899,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733457058,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733457196,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733457339,92,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,92,0,0
+1784733457578,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733457818,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733458029,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733458128,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733459659,123,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,123,0,0
+1784733459913,159,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,159,0,0
+1784733459977,128,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,128,0,0
+1784733460126,136,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,136,0,0
+1784733460271,98,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,98,0,0
+1784733460432,109,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,109,0,0
+1784733460653,71,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,71,0,0
+1784733460887,112,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,112,0,0
+1784733461098,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733461197,97,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,97,0,0
+1784733462783,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733463072,85,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,85,0,0
+1784733463107,87,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,87,0,0
+1784733463263,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733463371,116,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,116,0,0
+1784733463542,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733463726,68,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,68,0,0
+1784733464000,82,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,82,0,0
+1784733464176,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733464295,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733465854,96,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,96,0,0
+1784733466157,102,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,102,0,0
+1784733466196,102,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,102,0,0
+1784733466333,68,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,68,0,0
+1784733466489,74,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733466613,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733466796,74,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,74,0,0
+1784733467084,72,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,72,0,0
+1784733467254,73,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733467372,89,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,89,0,0
+1784733468951,89,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,88,0,0
+1784733469260,93,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,93,0,0
+1784733469299,86,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,86,0,0
+1784733469402,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733469564,66,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,66,0,0
+1784733469692,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733469871,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733470157,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733470328,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733470462,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733472041,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733472354,162,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,162,0,0
+1784733472387,189,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,189,0,0
+1784733472471,163,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,163,0,0
+1784733472631,113,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,113,0,0
+1784733472765,113,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,113,0,0
+1784733472941,104,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,104,0,0
+1784733473227,81,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,81,0,0
+1784733473398,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733473537,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733475119,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733475517,91,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,91,0,0
+1784733475576,90,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,90,0,0
+1784733475635,78,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,78,0,0
+1784733475746,74,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,74,0,0
+1784733475879,66,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,66,0,0
+1784733476046,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733476309,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733476475,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733476618,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733478189,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733478609,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733478668,99,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,98,0,0
+1784733478714,95,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,95,0,0
+1784733478822,72,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,72,0,0
+1784733478946,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733479116,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,75,0,0
+1784733479379,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733479545,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733479689,74,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,74,0,0
+1784733481267,101,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,101,0,0
+1784733481693,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733481769,76,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,76,0,0
+1784733481810,97,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,97,0,0
+1784733481895,107,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,107,0,0
+1784733482028,94,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,94,0,0
+1784733482193,113,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,113,0,0
+1784733482458,81,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,81,0,0
+1784733482622,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733482765,79,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,79,0,0
+1784733484371,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733484766,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733484846,86,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,86,0,0
+1784733484907,95,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,95,0,0
+1784733485002,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733485123,73,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733485307,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733485541,74,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,74,0,0
+1784733485695,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733485844,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733487448,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733487845,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733487933,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733488002,80,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,80,0,0
+1784733488082,72,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,72,0,0
+1784733488197,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733488385,75,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,75,0,0
+1784733488616,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733488774,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733488922,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733490522,75,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,75,0,0
+1784733490921,75,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,75,0,0
+1784733491004,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733491082,80,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,80,0,0
+1784733491155,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733491271,76,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,76,0,0
+1784733491462,89,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,89,0,0
+1784733491693,79,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,79,0,0
+1784733491846,78,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,78,0,0
+1784733491992,83,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,83,0,0
+1784733493598,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733493998,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733494088,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733494163,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733494240,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733494348,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733494552,77,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,77,0,0
+1784733494772,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733494925,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733495076,73,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,73,0,0
+1784733496668,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733497076,77,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,77,0,0
+1784733497159,111,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,111,0,0
+1784733497237,113,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,113,0,0
+1784733497318,88,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,88,0,0
+1784733497419,72,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,72,0,0
+1784733497630,111,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,111,0,0
+1784733497845,84,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,84,0,0
+1784733497994,104,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,104,0,0
+1784733498150,73,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,73,0,0
+1784733499746,66,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,66,0,0
+1784733500154,69,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,69,0,0
+1784733500271,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733500351,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733500408,78,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,78,0,0
+1784733500493,70,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,70,0,0
+1784733500742,71,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,71,0,0
+1784733500930,1011,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,1010,0,0
+1784733501100,875,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,875,0,0
+1784733501225,757,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,757,0,0
+1784733502813,147,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,147,0,0
+1784733503223,108,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,108,0,0
+1784733503342,126,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,126,0,0
+1784733503423,134,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,134,0,0
+1784733503487,138,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,138,0,0
+1784733503564,123,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,123,0,0
+1784733503814,130,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,130,0,0
+1784733504943,190,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,190,0,0
+1784733504976,183,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,183,0,0
+1784733504983,190,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,190,0,0
+1784733505961,147,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,147,0,0
+1784733506332,137,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,137,0,0
+1784733506469,108,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,108,0,0
+1784733506560,121,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,121,0,0
+1784733506627,123,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,123,0,0
+1784733506688,107,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,107,0,0
+1784733506946,124,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,124,0,0
+1784733508135,192,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,192,0,0
+1784733508159,184,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,184,0,0
+1784733508174,171,GET /api/sessions/{id}/students,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,26561,369,10,10,http://localhost:8000/api/sessions/perf-test-exam/students,171,0,0
+1784733509109,149,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-1,text,true,,28112,367,10,10,http://localhost:8000/api/sessions/perf-test-exam/report,149,0,0
+1784733509470,167,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-2,text,true,,28112,367,9,9,http://localhost:8000/api/sessions/perf-test-exam/report,167,0,0
+1784733509578,118,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-3,text,true,,28112,367,8,8,http://localhost:8000/api/sessions/perf-test-exam/report,117,0,0
+1784733509682,111,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-4,text,true,,28112,367,7,7,http://localhost:8000/api/sessions/perf-test-exam/report,111,0,0
+1784733509751,140,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-5,text,true,,28112,367,6,6,http://localhost:8000/api/sessions/perf-test-exam/report,140,0,0
+1784733509796,131,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-6,text,true,,28112,367,5,5,http://localhost:8000/api/sessions/perf-test-exam/report,131,0,0
+1784733510071,132,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-7,text,true,,28112,367,4,4,http://localhost:8000/api/sessions/perf-test-exam/report,132,0,0
+1784733511327,196,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-8,text,true,,28112,367,3,3,http://localhost:8000/api/sessions/perf-test-exam/report,196,0,0
+1784733511345,196,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-9,text,true,,28112,367,2,2,http://localhost:8000/api/sessions/perf-test-exam/report,196,0,0
+1784733511347,203,GET /api/sessions/{id}/report,200,OK,B - Dashboard Polling (10 threads x 20 loops) 2-10,text,true,,28112,367,1,1,http://localhost:8000/api/sessions/perf-test-exam/report,203,0,0
+1784733511556,735,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-1,text,true,,415,235,8,8,http://localhost:8000/auth/login,735,0,3
+1784733512291,2083,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-1,text,true,,415,235,20,20,http://localhost:8000/auth/login,2083,0,0
+1784733511654,2720,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-2,text,true,,415,235,20,20,http://localhost:8000/auth/login,2720,0,1
+1784733511755,2621,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-3,text,true,,415,235,20,20,http://localhost:8000/auth/login,2621,0,2
+1784733511956,3982,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-5,text,true,,415,235,20,20,http://localhost:8000/auth/login,3982,0,2
+1784733511856,4082,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-4,text,true,,415,235,20,20,http://localhost:8000/auth/login,4082,0,2
+1784733512055,4607,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-6,text,true,,415,235,20,20,http://localhost:8000/auth/login,4607,0,1
+1784733512156,7309,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-7,text,true,,415,235,20,20,http://localhost:8000/auth/login,7309,0,2
+1784733512256,7215,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-8,text,true,,415,235,20,20,http://localhost:8000/auth/login,7215,0,2
+1784733514375,5097,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-2,text,true,,416,236,20,20,http://localhost:8000/auth/login,5097,0,0
+1784733514375,5097,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-1,text,true,,416,236,20,20,http://localhost:8000/auth/login,5097,0,0
+1784733512355,8603,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-9,text,true,,416,236,20,20,http://localhost:8000/auth/login,8603,0,1
+1784733514377,6581,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-3,text,true,,416,236,20,20,http://localhost:8000/auth/login,6581,0,0
+1784733512454,11834,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-10,text,true,,416,236,20,20,http://localhost:8000/auth/login,11834,0,1
+1784733515939,8349,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-5,text,true,,416,236,20,20,http://localhost:8000/auth/login,8349,0,0
+1784733515939,8349,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-4,text,true,,416,236,20,20,http://localhost:8000/auth/login,8349,0,0
+1784733512554,11735,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-11,text,true,,416,236,20,20,http://localhost:8000/auth/login,11735,0,1
+1784733516662,7628,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-6,text,true,,416,236,20,20,http://localhost:8000/auth/login,7628,0,0
+1784733512654,14341,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-12,text,true,,416,236,20,20,http://localhost:8000/auth/login,14341,0,2
+1784733519465,7530,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-7,text,true,,416,236,20,20,http://localhost:8000/auth/login,7530,0,0
+1784733512754,14241,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-13,text,true,,416,236,20,20,http://localhost:8000/auth/login,14241,0,2
+1784733519472,7524,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-8,text,true,,416,236,20,20,http://localhost:8000/auth/login,7524,0,0
+1784733519472,7524,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-2,text,true,,416,236,20,20,http://localhost:8000/auth/login,7524,0,0
+1784733519472,7524,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-1,text,true,,416,236,20,20,http://localhost:8000/auth/login,7524,0,0
+1784733512955,15004,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-15,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,1
+1784733513054,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-16,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,1
+1784733513154,15004,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-17,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,3
+1784733513255,15004,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-18,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,2
+1784733513354,15003,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-19,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,1
+1784733513453,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-20,text,false,,2785,0,20,20,http://localhost:8000/auth/login,0,0,1
+1784733512853,16666,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-14,text,true,,416,236,20,20,http://localhost:8000/auth/login,16666,0,1
+1784733520959,8560,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-3,text,true,,416,236,20,20,http://localhost:8000/auth/login,8560,0,0
+1784733520958,8562,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-9,text,true,,416,236,20,20,http://localhost:8000/auth/login,8562,0,0
+1784733524288,9689,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-4,text,true,,416,236,20,20,http://localhost:8000/auth/login,9689,0,0
+1784733524288,9689,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-10,text,true,,416,236,20,20,http://localhost:8000/auth/login,9689,0,0
+1784733524289,9689,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-11,text,true,,416,236,20,20,http://localhost:8000/auth/login,9689,0,0
+1784733524291,9687,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-6,text,true,,416,236,20,20,http://localhost:8000/auth/login,9687,0,0
+1784733524288,9691,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-5,text,true,,416,236,20,20,http://localhost:8000/auth/login,9691,0,0
+1784733526996,12217,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-13,text,true,,416,236,20,20,http://localhost:8000/auth/login,12217,0,0
+1784733526996,12217,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-12,text,true,,416,236,20,20,http://localhost:8000/auth/login,12217,0,0
+1784733526996,12217,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-2,text,true,,416,236,20,20,http://localhost:8000/auth/login,12217,0,0
+1784733526996,12217,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-1,text,true,,416,236,20,20,http://localhost:8000/auth/login,12217,0,0
+1784733526996,12217,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-7,text,true,,416,236,20,20,http://localhost:8000/auth/login,12217,0,0
+1784733526996,12800,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-8,text,true,,416,236,19,19,http://localhost:8000/auth/login,12800,0,0
+1784733529521,12128,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-14,text,true,,415,235,19,19,http://localhost:8000/auth/login,12128,0,0
+1784733529521,12128,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-9,text,true,,415,235,19,19,http://localhost:8000/auth/login,12128,0,0
+1784733529521,12128,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-3,text,true,,415,235,19,19,http://localhost:8000/auth/login,12128,0,0
+1784733527961,15003,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-15,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,2
+1784733528058,15004,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-16,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,2
+1784733528159,15003,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-17,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,2
+1784733528260,15003,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-18,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,2
+1784733528358,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-19,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,1
+1784733528456,15003,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-20,text,false,,2785,0,19,19,http://localhost:8000/auth/login,0,0,2
+1784733533976,11059,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-4,text,true,,415,235,19,19,http://localhost:8000/auth/login,11059,0,0
+1784733533977,11058,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-11,text,true,,415,235,19,19,http://localhost:8000/auth/login,11058,0,0
+1784733533977,11058,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-6,text,true,,415,235,19,19,http://localhost:8000/auth/login,11058,0,0
+1784733533976,11060,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-10,text,true,,415,235,19,19,http://localhost:8000/auth/login,11060,0,0
+1784733533978,11059,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-5,text,true,,415,235,19,19,http://localhost:8000/auth/login,11059,0,0
+1784733539213,9199,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-13,text,true,,416,236,19,19,http://localhost:8000/auth/login,9199,0,0
+1784733539213,9199,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-2,text,true,,415,235,19,19,http://localhost:8000/auth/login,9199,0,0
+1784733539213,9200,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-7,text,true,,416,236,18,18,http://localhost:8000/auth/login,9200,0,0
+1784733539213,9200,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-12,text,true,,416,236,18,18,http://localhost:8000/auth/login,9200,0,0
+1784733539796,8618,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-8,text,true,,416,236,18,18,http://localhost:8000/auth/login,8618,0,0
+1784733541650,9274,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-9,text,true,,416,236,18,18,http://localhost:8000/auth/login,9274,0,0
+1784733541650,9274,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-3,text,true,,416,236,18,18,http://localhost:8000/auth/login,9274,0,0
+1784733541650,9274,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-14,text,true,,416,236,18,18,http://localhost:8000/auth/login,9274,0,0
+1784733545036,9341,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-4,text,true,,416,236,17,17,http://localhost:8000/auth/login,9341,0,0
+1784733545036,9341,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-6,text,true,,416,236,17,17,http://localhost:8000/auth/login,9341,0,0
+1784733545037,9341,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-10,text,true,,416,236,16,16,http://localhost:8000/auth/login,9340,0,0
+1784733545036,9342,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-11,text,true,,416,236,15,15,http://localhost:8000/auth/login,9342,0,0
+1784733545038,9340,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-5,text,true,,416,236,15,15,http://localhost:8000/auth/login,9340,0,0
+1784733542965,11414,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-15,text,true,,416,236,14,14,http://localhost:8000/auth/login,11414,0,1
+1784733543063,14151,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-16,text,true,,416,236,14,14,http://localhost:8000/auth/login,14151,0,1
+1784733548413,8802,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-13,text,true,,416,236,14,14,http://localhost:8000/auth/login,8802,0,0
+1784733548413,8802,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-7,text,true,,416,236,14,14,http://localhost:8000/auth/login,8802,0,0
+1784733548414,9360,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-12,text,true,,416,236,13,13,http://localhost:8000/auth/login,9360,0,0
+1784733548414,9361,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-8,text,true,,416,236,13,13,http://localhost:8000/auth/login,9361,0,0
+1784733543164,14617,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-17,text,true,,416,236,12,12,http://localhost:8000/auth/login,14617,0,2
+1784733543264,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-18,text,false,,2785,0,12,12,http://localhost:8000/auth/login,0,0,1
+1784733543361,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-19,text,false,,2785,0,12,12,http://localhost:8000/auth/login,0,0,1
+1784733543459,15002,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,C - Auth Throughput (20 threads x 5 loops) 3-20,text,false,,2785,0,12,12,http://localhost:8000/auth/login,0,0,2
+1784733550924,8769,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-9,text,true,,416,236,12,12,http://localhost:8000/auth/login,8769,0,0
+1784733550924,10785,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-14,text,true,,416,236,11,11,http://localhost:8000/auth/login,10785,0,0
+1784733554378,7332,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-10,text,true,,416,236,11,11,http://localhost:8000/auth/login,7332,0,0
+1784733554378,7333,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-11,text,true,,416,236,10,10,http://localhost:8000/auth/login,7333,0,0
+1784733554380,9720,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-15,text,true,,416,236,9,9,http://localhost:8000/auth/login,9720,0,0
+1784733557215,7939,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-16,text,true,,416,236,9,9,http://localhost:8000/auth/login,7939,0,0
+1784733557215,8513,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-13,text,true,,416,236,9,9,http://localhost:8000/auth/login,8513,0,0
+1784733557775,7953,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-12,text,true,,416,236,9,9,http://localhost:8000/auth/login,7953,0,0
+1784733557781,7949,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-17,text,true,,416,236,7,7,http://localhost:8000/auth/login,7949,0,0
+1784733558266,8629,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-18,text,true,,416,236,7,7,http://localhost:8000/auth/login,8629,0,1
+1784733561709,5187,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-14,text,true,,416,236,7,7,http://localhost:8000/auth/login,5187,0,0
+1784733558363,10675,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-19,text,true,,416,236,6,6,http://localhost:8000/auth/login,10675,0,1
+1784733558462,10576,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-20,text,true,,416,236,6,6,http://localhost:8000/auth/login,10576,0,1
+1784733564101,4937,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-15,text,true,,416,236,6,6,http://localhost:8000/auth/login,4937,0,0
+1784733565154,3884,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-16,text,true,,416,236,6,6,http://localhost:8000/auth/login,3884,0,0
+1784733565731,3918,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-17,text,true,,416,236,4,4,http://localhost:8000/auth/login,3918,0,0
+1784733566896,3286,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-18,text,true,,416,236,3,3,http://localhost:8000/auth/login,3285,0,0
+1784733569038,2179,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-19,text,true,,416,236,2,2,http://localhost:8000/auth/login,2179,0,0
+1784733569038,2179,POST /auth/login,200,OK,C - Auth Throughput (20 threads x 5 loops) 3-20,text,true,,416,236,2,2,http://localhost:8000/auth/login,2179,0,0
